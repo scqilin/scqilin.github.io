@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to GitHub Pages 狂暴机甲
 
 You can use the [editor on GitHub](https://github.com/scqilin/scqilin.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
