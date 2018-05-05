@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>代码复习点多点三角形</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<canvas id="canvas" width="500" height="500" style="background-color:#CCCCCC;"></canvas>
+<div>
+    <button onclick="dian()">点</button>
+    <button onclick="dianarray()">多点</button>
+    <button onclick="triangles()">三角形</button>
+</div>
+<script>
+    var ctx = document.getElementById('canvas').getContext('webgl');
+
+    var vertexShaderSource = ""+
+        "attribute vec4 aPos;"+
+        "void main(){"+
+        "gl_Position = aPos;"+
+        "gl_PointSize = 10.0;"+
+        "}";
+    var fragmentShaderSource = ""+
+        "void main(){"+
+        "gl_FragColor = vec4(1.0,.0,.0,1.0);"+
+        "}";
+
+    var program = ctx.createProgram();
+    var vertexShader = ctx.createShader(ctx.VERTEX_SHADER);
+    var fragmentShader = ctx.createShader(ctx.FRAGMENT_SHADER);
+    ctx.shaderSource(vertexShader,vertexShaderSource);
+    ctx.shaderSource(fragmentShader,fragmentShaderSource);
+    ctx.compileShader(vertexShader);
+    ctx.compileShader(fragmentShader);
+    ctx.attachShader(program,vertexShader);
+    ctx.attachShader(program,fragmentShader);
+    ctx.linkProgram(program);
+    ctx.useProgram(program);
+
+    ctx.clearColor(0.8,0.8,0.8,1.0);
+    ctx.clear(ctx.COLOR_BUFFER_BIT);
+
+    var aposLocation = ctx.getAttribLocation(program,'aPos');
+    function dian(){
+        ctx.vertexAttrib4f(aposLocation,0.0,0.0,0.0,1.0);
+        ctx.drawArrays(ctx.POINTS,0,1);
+    }
+
+    function dianarray(){
+        var data = new Float32Array([
+            -0.5,0.0,
+            0.0,-0.5,
+            0.5,0.0,
+            0.5,0.5,
+        ]);
+        var buffer = ctx.createBuffer();
+        ctx.bindBuffer(ctx.ARRAY_BUFFER,buffer);
+        ctx.bufferData(ctx.ARRAY_BUFFER,data,ctx.STATIC_DRAW);
+        ctx.vertexAttribPointer(aposLocation,2,ctx.FLOAT,false,0,0);
+        ctx.enableVertexAttribArray(aposLocation);//开启分配
+        ctx.drawArrays(ctx.POINTS,0,4);
+        ctx.disableVertexAttribArray(aposLocation);//关闭分配后，函数dian()中vertexAttrib4f()方法才会生效。
+    }
+
+    function triangles(){
+        var data = new Float32Array([
+            -0.5,0.0,
+            0.0,-0.5,
+            0.5,0.0,
+        ]);
+        var buffer = ctx.createBuffer();
+        ctx.bindBuffer(ctx.ARRAY_BUFFER,buffer);
+        ctx.bufferData(ctx.ARRAY_BUFFER,data,ctx.STATIC_DRAW);
+        ctx.vertexAttribPointer(aposLocation,2,ctx.FLOAT,false,0,0);
+        ctx.enableVertexAttribArray(aposLocation);//开启分配
+        ctx.drawArrays(ctx.TRIANGLES,0,3);
+        ctx.disableVertexAttribArray(aposLocation);//关闭分配后，函数dian()中vertexAttrib4f()方法才会生效。
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绘制多个点</title>
+    <script src="lib.js"></script>
+    <script type="text/javascript">
+        function main() {
+            var ctx = document.getElementById('canvas').getContext('webgl');
+
+            var vartexShaderSource = "" +
+                "attribute vec4 aPos;" +
+                "void main(){" +
+                "gl_Position = aPos;" +
+                "gl_PointSize = 20.0;" +
+                "}";
+            var fragmentShaderSource = "" +
+                "void main(){" +
+                "gl_FragColor = vec4(1.0,0.0,0.0,1.0);" +
+                "}";
+            var program = iniShaders(ctx,vartexShaderSource,fragmentShaderSource);
+
+            //定义一个二维数组存放数据
+            /*var points = [
+                [0.0,0.0,],
+                [-0.5,-0.5,],
+                [0.5,-0.5,],
+                [0.0,0.5]
+            ];
+            var pLocation = ctx.getAttribLocation(program,'aPos');
+            for(var i = 0;i<points.length;i++){
+                ctx.vertexAttrib2f(pLocation,points[i][0],points[i][1]);
+                ctx.drawArrays(ctx.POINTS,0,1);
+            }*/
+            //结构化数组
+            var data1 = new Float32Array([0.0,0.0, 0.2,0.3, -0.3,0.4]);
+            var buffer = ctx.createBuffer();
+            ctx.bindBuffer(ctx.ARRAY_BUFFER,buffer);
+            ctx.bufferData(ctx.ARRAY_BUFFER,data1,ctx.STATIC_DRAW);
+            var pLocation = ctx.getAttribLocation(program,'aPos');
+            ctx.vertexAttribPointer(pLocation,2,ctx.FLOAT,false,0,0);
+            ctx.enableVertexAttribArray(pLocation);
+            ctx.drawArrays(ctx.POINTS,0,3);
+
+
+
+        }
+    </script>
+</head>
+<body onload="main()">
+<canvas id="canvas" width="500" height="500" style="background-color: #555555;"></canvas>
+</body>
+</html>

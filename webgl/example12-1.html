@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视点</title>
+    <script src="lib.js"></script>
+</head>
+<body>
+<canvas id="canvas" width="500" height="500" style="background-color: #CCCCCC"></canvas>
+<script type="text/javascript">
+    var ctx = document.getElementById('canvas').getContext('webgl');
+    var vertShaderSource = "" +
+        "attribute vec4 pos;" +
+        "attribute vec4 acolor;" +
+        "varying vec4 color;" +
+        "uniform mat4 u_vmatrix;" +
+        "void main(){" +
+        "gl_Position = u_vmatrix*pos;" +
+        "color = acolor;" +
+        "}";
+
+    var fragmentShaderSource = "" +
+        "precision lowp float;" +
+        "varying vec4 color;" +
+        "void main(){" +
+        "gl_FragColor = color;" +
+        "}";
+    var data = new Float32Array([
+        -0.8,0.0,0.0,
+        0.0,0.0,0.0,
+        0.0,0.8,0.0,
+        0.4,0.0,-0.4,
+    ]);
+    var colordata = new Float32Array([
+        1.0,0.0,0.0,
+        0.0,1.0,0.0,
+        0.0,0.0,1.0,
+        1.0,1.0,1.0,
+    ]);
+    var program = iniShaders(ctx,vertShaderSource,fragmentShaderSource);
+    bindAttributeBuffer(ctx,'acolor',colordata,program,3);
+    bindAttributeBuffer(ctx,'pos',data,program,3);
+
+    var u_vmatrixLocation = ctx.getUniformLocation(program,'u_vmatrix');
+
+    var near = 10;
+    var far = -10;
+    var eyeX = 0.0,eyeY=0.0,eyeZ=0.1;
+    function draw() {
+        var mx = getVMatrix(eyeX,eyeY,eyeZ); // 视图矩阵
+        var omx = getOMX(-1,1, -1,1, near , far);// 正射投影矩阵
+        ctx.uniformMatrix4fv(u_vmatrixLocation,false,multiplyMatrix(omx,mx));
+        ctx.clearColor(.5,.5,.5,1.0);
+        ctx.clear(ctx.COLOR_BUFFER_BIT);
+        ctx.drawArrays(ctx.TRIANGLE_STRIP,0,4);
+    }
+
+    document.addEventListener('keydown', function (ev) {
+
+        switch (ev.keyCode){
+            case 37:
+                eyeX -= 0.1;
+                break;
+            case 39:
+                eyeX += 0.1;
+                break;
+            case 38:
+                eyeY += 0.1;
+                break;
+            case 40:
+                eyeY -= 0.1;
+                break;
+            case 33:
+                eyeZ += 0.1;
+                break;
+            case 34:
+                eyeZ -= 0.1;
+                break;
+        }
+        console.log(eyeZ);
+        draw();
+    });
+
+    draw();
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <script src="lib.js"></script>
+</head>
+<body>
+<canvas id="canvas" width="500" height="500"></canvas>
+<script type="text/javascript">
+    var ctx = document.getElementById('canvas').getContext('webgl');
+    var fragmentShaderSource = "" +
+        "void main(){" +
+        "gl_FragColor = vec4(1.0,.0,.0,1.0);" +
+        "}";
+    var vertexShaderSource = "" +
+        "uniform mat4 xz;" +
+        "uniform mat4 py;" +
+        "attribute vec4 pos;" +
+        "void main(){" +
+        "gl_Position = xz*py*pos;" + //xz*py*pos 和 py*xz*pos 是有差别的
+        "}";
+    var program = iniShaders(ctx,vertexShaderSource,fragmentShaderSource);
+    var data = new Float32Array([
+        -0.1,-0.6,
+        0.1,-0.6,
+        0.0,0.0,
+    ]);
+
+    var angle = 0.0;
+    var tx = 0.0;
+    var ty = 0.0;
+    function draw() {
+        //二维旋转矩阵
+
+        var x = Math.PI/180*angle;
+        var sinB = Math.sin(x);
+        var cosB = Math.cos(x);
+        var xz = new Float32Array([
+            cosB,sinB,0.0,0.0,
+            -sinB,cosB,0.0,0.0,
+            .0,.0,1.0,.0,
+            .0,.0,.0,1.0,
+        ]);
+        //二维平移矩阵
+
+        var py = new Float32Array([
+            1.0,0.0,0.0,0.0,
+            0.0,1.0,0.0,0.0,
+            0.0,0.0,1.0,0.0,
+            tx,ty,0.0,1.0,
+        ]);
+        var xzLocation = ctx.getUniformLocation(program,'xz');
+        ctx.uniformMatrix4fv(xzLocation,false,xz);
+        var pyLocation = ctx.getUniformLocation(program,'py');
+        ctx.uniformMatrix4fv(pyLocation,false,py);
+
+        var posLocation = ctx.getAttribLocation(program,'pos');
+        var buffer = ctx.createBuffer();
+        ctx.bindBuffer(ctx.ARRAY_BUFFER,buffer);
+        ctx.bufferData(ctx.ARRAY_BUFFER,data,ctx.STATIC_DRAW);
+        ctx.vertexAttribPointer(posLocation,2,ctx.FLOAT,false,0,0);
+        ctx.enableVertexAttribArray(posLocation);
+
+        ctx.clearColor(0.8,0.8,0.8,1.0);
+        ctx.clear(ctx.COLOR_BUFFER_BIT);
+        ctx.drawArrays(ctx.TRIANGLES,0,3);
+    }
+
+    function run() {
+        tx = 0.5;
+        //ty = 0.001;
+        angle += 1.0;
+        draw();
+        setTimeout(run,100);
+    }
+    run();
+
+</script>
+</body>
+</html>

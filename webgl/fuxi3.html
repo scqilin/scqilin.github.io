@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复习基本知识</title>
+</head>
+<body>
+<canvas id="canvas" width="500" height="500" style="background-color: #6e3723"></canvas>
+<script type="text/javascript">
+    var ctx = document.getElementById('canvas').getContext('webgl');
+
+    var vertexShaderSource = "" +
+        "attribute vec4 aPos;" +
+        "void main(){" +
+        "gl_Position = aPos;" +
+        "gl_PointSize = 10.0;" +
+        "}";
+    var fragmentShaderSource = "" +
+        "void main(){" +
+        "gl_FragColor = vec4(1.0,0.0,0.0,1.0);" +
+        "}"
+    var program = ctx.createProgram();
+    var vertexShader = ctx.createShader(ctx.VERTEX_SHADER);
+    var fragmentShader = ctx.createShader(ctx.FRAGMENT_SHADER);
+    ctx.shaderSource(vertexShader,vertexShaderSource);
+    ctx.shaderSource(fragmentShader,fragmentShaderSource);
+    ctx.compileShader(vertexShader);
+    ctx.compileShader(fragmentShader);
+    ctx.attachShader(program,vertexShader);
+    ctx.attachShader(program,fragmentShader);
+    ctx.linkProgram(program);
+    ctx.useProgram(program);
+
+    ctx.clearColor(0.6,0.6,0.6,1.0);
+    ctx.clear(ctx.COLOR_BUFFER_BIT);
+
+    var posLocation = ctx.getAttribLocation(program,'aPos');
+
+    ctx.vertexAttrib4f(posLocation,0.0,0.0,0.0,1.0);
+    ctx.drawArrays(ctx.POINTS,0,1);
+
+</script>
+</body>
+</html>

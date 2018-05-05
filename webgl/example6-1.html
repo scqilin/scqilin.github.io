@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动</title>
+</head>
+<body>
+<canvas id="canvas" width="500" height="500" style="background-color: #555555"></canvas>
+<div>
+    <button onclick="zuo()" >左边</button><button onclick="you()" >右边</button>
+</div>
+<script type="text/javascript">
+    var ctx = document.getElementById('canvas').getContext('webgl');
+    var vertexShaderSource = "" +
+        "attribute vec4 aPos;" +
+        "attribute vec4 a;" +
+        "void main(){" +
+        "gl_Position = aPos+a;" +
+        "gl_PointSize = 10.0;" +
+        "}";
+    var fragmentShaderSource =  "" +
+        "void main(){" +
+        "gl_FragColor = vec4(1.0,.0,.0,1.0);" +
+        "}";
+
+    var program = ctx.createProgram();
+    var vertexShader = ctx.createShader(ctx.VERTEX_SHADER);
+    var fragmentShader = ctx.createShader(ctx.FRAGMENT_SHADER);
+    ctx.shaderSource(vertexShader,vertexShaderSource);
+    ctx.shaderSource(fragmentShader,fragmentShaderSource);
+    ctx.compileShader(vertexShader);
+    ctx.compileShader(fragmentShader);
+    ctx.attachShader(program,vertexShader);
+    ctx.attachShader(program,fragmentShader);
+    ctx.linkProgram(program);
+    ctx.useProgram(program);
+
+    var pLocation = ctx.getAttribLocation(program,'aPos');
+    var aLocation = ctx.getAttribLocation(program,'a');
+    ctx.vertexAttrib4f(pLocation,0.0,0.0,1.0,1.0);
+    ctx.drawArrays(ctx.POINTS,0,1);
+    var x=0.0;
+    function you() {
+        x=x+0.05;
+        ctx.vertexAttrib4f(aLocation,x,.0,1.0,1.0);
+        ctx.drawArrays(ctx.POINTS,0,1);
+    }
+    function zuo() {
+        x=x-0.05;
+        ctx.vertexAttrib4f(aLocation,x,.0,1.0,1.0);
+        ctx.drawArrays(ctx.POINTS,0,1);
+    }
+
+
+
+
+</script>
+</body>
+</html>
