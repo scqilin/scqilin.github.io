@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ES6-THREE.js</title>
+<script type="text/javascript" src="bundle.js"></script></head>
+
+<body>
+    <script type="text/javascript">
+        var tcart = new threeInit();
+        tcart.drawScene();
+        // a [-20.20] b[2,18]
+        var time1 = -20, time2 = 2;
+        var inter = setInterval(function () {
+            time1++;
+            time2++;
+            tcart.setPositon(time1, time2);
+            if (time1 >= 20) {
+                window.clearInterval(inter);
+            }
+        }, 100);
+    </script>
+</body>
+
+</html>
