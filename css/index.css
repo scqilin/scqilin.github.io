@@ -1752,6 +1752,14 @@ td {
   font-size: 0.9em;
   color: #999;
 }
+.busuanzi-site_uv,
+.busuanzi-site_pv {
+  color: #f4f5f5;
+}
+.busuanzi-site_uv i,
+.busuanzi-site_pv i {
+  margin: 0 0.3rem 0 0;
+}
 @media (min-width: 1341.98px) {
   .header-nav-inner {
     width: 1301.98px;
