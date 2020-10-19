@@ -1,30 +1,183 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="keywords" content="scqilin, Three.js-WebGL"><meta name="description" content="Three.js-WebGL"><title>Three.js-WebGL</title><link rel="icon" href="/assets/normal16.png?v=1.5.4" type="image/png" sizes="16x16"><link rel="icon" href="/assets/normal32.png?v=1.5.4" type="image/png" sizes="32x32"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=1.5.4"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><script src="https://www.googletagmanager.com/gtag/js?id=UA-155226107-1" async=""></script><script>if (window.location.hostname !== 'localhost') {
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'UA-155226107-1');
-}</script><script>var Stun = window.Stun || {};
-var CONFIG = {
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Three.js-WebGL - Dawn of Man starts in the Stone Age, and takes you up to the Iron Age, spanning more than 10,000 years of human prehistory.</title><meta name="keywords" content="Three.js WebGL"><meta name="author" content="scqilin"><meta name="copyright" content="scqilin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="Three.js-WebGL">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Three.js-WebGL">
+<meta property="og:url" content="https://scqilin.github.io/index.html">
+<meta property="og:site_name" content="Three.js-WebGL">
+<meta property="og:description" content="Three.js-WebGL">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://scqilin.github.io/null">
+<meta property="article:author" content="scqilin">
+<meta property="article:tag" content="Three.js WebGL">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://scqilin.github.io/null"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://scqilin.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
   root: '/',
+  hexoversion: '4.2.1',
   algolia: undefined,
-  fontawesome: {"prefix":"fa"},
-  sidebar: {"offsetTop":"30px","renderTocDepth":4},
-  header: {"scrollDownIcon":false},
-  back2top: {"enable":true},
-  reward: false,
-  fancybox: false,
-  zoom_image: {"enable":true,"mask_color":"rgba(0,0,0,0.6)"},
-  gallery_waterfall: undefined,
-  lazyload: undefined,
-  pjax: undefined,
-  external_link: {"icon":{"enable":true,"name":"external-link"}},
-  shortcuts: {"switch_post":false},
-  prompt: {"copy_success":"复制成功","copy_error":"复制失败","creative_commons":"知识共享","copy_button":"点击复制"}
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
 };
 
-window.CONFIG = CONFIG;</script></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav"><div class="header-nav-inner"><div class="header-nav-btn fa fa-bars"></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/"><i class="fa fa-home"></i>首页</a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/archives/"><i class="fa fa-folder-open"></i>归档</a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/categories/"><i class="fa fa-th"></i>分类</a></div></div></div></nav><div class="header-info"><div class="header-info-inner"><div class="header-info-title">Three.js-WebGL</div><div class="header-info-subtitle">Dawn of Man starts in the Stone Age, and takes you up to the Iron Age, spanning more than 10,000 years of human prehistory.</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home"><section class="post-list"><article class="post"><header class="post-header"><h1 class="post-header-title"><a class="post-header-title__a" href="/2020/10/19/threejs/%E6%A1%88%E4%BE%8B%E5%88%97%E8%A1%A8/">案例列表</a></h1><div class="post-header-meta"><span class="post-header-meta-create"><i class="fa fa-calendar-o"></i><span>发表于 </span><span>2020-10-19</span></span><span class="post-header-meta-update"><i class="fa fa-calendar-check-o"></i><span>更新于 </span><span>2020-10-19</span></span></div></header><div class="post-body"><div class="post-body-excerpt"><h1 id="案例列表"><span class="heading-link">案例列表</span></h1><h2 id="three开发贪吃蛇"><span class="heading-link">three开发贪吃蛇</span></h2><p><a href="/assets/example/贪吃蛇.html">three开发贪吃蛇</a></p>
-</div></div></article><article class="post"><header class="post-header"><h1 class="post-header-title"><a class="post-header-title__a" href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">hexo使用教程</a></h1><div class="post-header-meta"><span class="post-header-meta-create"><i class="fa fa-calendar-o"></i><span>发表于 </span><span>2019-12-02</span></span><span class="post-header-meta-update"><i class="fa fa-calendar-check-o"></i><span>更新于 </span><span>2019-12-27</span></span></div></header><div class="post-body"><div class="post-body-excerpt"><p>hexo使用教程</p></div><div class="post-body-more"><a class="post-body-more__a" href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">阅读全文 »</a></div></div></article><article class="post"><header class="post-header"><h1 class="post-header-title"><a class="post-header-title__a" href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">hexo安装教程</a></h1><div class="post-header-meta"><span class="post-header-meta-create"><i class="fa fa-calendar-o"></i><span>发表于 </span><span>2019-12-02</span></span><span class="post-header-meta-update"><i class="fa fa-calendar-check-o"></i><span>更新于 </span><span>2019-12-27</span></span></div></header><div class="post-body"><div class="post-body-excerpt"><p>官网地址：<span class="external-link"><a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a><i class="fa fa-external-link"></i></span><br>安装基本知识：git、node、npm。了解会用即可。<br>安装基本步骤：</p></div><div class="post-body-more"><a class="post-body-more__a" href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">阅读全文 »</a></div></div></article><article class="post"><header class="post-header"><h1 class="post-header-title"><a class="post-header-title__a" href="/2019/03/28/threejs/Bloom%E6%B3%9B%E5%85%89/">Bloom泛光</a></h1><div class="post-header-meta"><span class="post-header-meta-create"><i class="fa fa-calendar-o"></i><span>发表于 </span><span>2019-03-28</span></span><span class="post-header-meta-update"><i class="fa fa-calendar-check-o"></i><span>更新于 </span><span>2020-10-19</span></span></div></header><div class="post-body"><div class="post-body-excerpt"><h1 id="Bloom泛光"><span class="heading-link">Bloom泛光</span></h1><p>泛光（Bloom） 是一种现实世界中的光现象，通过它能够以较为适度的渲染性能成本极大地增加渲染图像的真实感。用肉眼观察黑暗背景下非常明亮 的物体时会看到泛光效果。亮度更高的物体还会造成其他效果（条纹、镜头光斑），但这些效果不在经典的泛光 效果范畴内。我们的显示器（电视、TFT屏等）通常不支持HDR（高动态范围），因此实际上无法渲染太亮的物体。于是我们模拟了 当光线射到胶片（胶片次表面散射）或摄像机前（乳白色玻璃滤光片）时眼睛中出现的效果（视网膜的次表面散射）。这种效果不一定符合实际 情况，但它可以帮助表现对象的相对亮度，或者给屏幕上显示的LDR（低动态范围）图像添加真实感。</p></div><div class="post-body-more"><a class="post-body-more__a" href="/2019/03/28/threejs/Bloom%E6%B3%9B%E5%85%89/">阅读全文 »</a></div></div></article><article class="post"><header class="post-header"><h1 class="post-header-title"><a class="post-header-title__a" href="/2018/12/02/threejs/%E5%BE%85%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/">待整理笔记</a></h1><div class="post-header-meta"><span class="post-header-meta-create"><i class="fa fa-calendar-o"></i><span>发表于 </span><span>2018-12-02</span></span><span class="post-header-meta-update"><i class="fa fa-calendar-check-o"></i><span>更新于 </span><span>2020-10-19</span></span></div></header><div class="post-body"><div class="post-body-excerpt"><h1 id="es6-three-js-开发"><span class="heading-link">es6 three.js 开发</span></h1><p>移除场景 清空内存 性能优化</p></div><div class="post-body-more"><a class="post-body-more__a" href="/2018/12/02/threejs/%E5%BE%85%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/">阅读全文 »</a></div></div></article><article class="post"><header class="post-header"><h1 class="post-header-title"><a class="post-header-title__a" href="/2018/12/01/typescript/typescript%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">typescript基本用法</a></h1><div class="post-header-meta"><span class="post-header-meta-create"><i class="fa fa-calendar-o"></i><span>发表于 </span><span>2018-12-01</span></span><span class="post-header-meta-update"><i class="fa fa-calendar-check-o"></i><span>更新于 </span><span>2020-10-19</span></span></div></header><div class="post-body"><div class="post-body-excerpt"><p>1 TypeScript介绍<br>2 自动化工作流程<br>3 使用函数<br>4 TypeScript中面向对象的编程<br>5 运行时<br>6 应用性能<br>7 应用测试<br>8 装饰器<br>9 应用框架<br>10 汇总</p></div><div class="post-body-more"><a class="post-body-more__a" href="/2018/12/01/typescript/typescript%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">阅读全文 »</a></div></div></article><article class="post"><header class="post-header"><h1 class="post-header-title"><a class="post-header-title__a" href="/2015/12/02/threejs/three-js%E5%85%A5%E9%97%A8/">three.js入门</a></h1><div class="post-header-meta"><span class="post-header-meta-create"><i class="fa fa-calendar-o"></i><span>发表于 </span><span>2015-12-02</span></span><span class="post-header-meta-update"><i class="fa fa-calendar-check-o"></i><span>更新于 </span><span>2019-12-27</span></span></div></header><div class="post-body"><div class="post-body-excerpt"></div></div></article><article class="post"><header class="post-header"><h1 class="post-header-title"><a class="post-header-title__a" href="/2015/12/02/threejs/echarts%E7%94%9F%E6%88%90%E7%9A%84%E5%9B%BE%E8%A1%A8%E5%9C%A8three.js%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/">echarts生成的图表在three.js中的应用</a></h1><div class="post-header-meta"><span class="post-header-meta-create"><i class="fa fa-calendar-o"></i><span>发表于 </span><span>2015-12-02</span></span><span class="post-header-meta-update"><i class="fa fa-calendar-check-o"></i><span>更新于 </span><span>2020-10-19</span></span></div></header><div class="post-body"><div class="post-body-excerpt"><h1 id="echarts生成的图表在three-js中的应用"><span class="heading-link">echarts生成的图表在three.js中的应用</span></h1><p>最近群里有几个人问，如何把echarts的图表贴在three.js的模型上。这个问题其实很简单，因为二者都是渲染成canvas的，直接用echarts生成的canvas当作贴图就可以了。<br>方法确定可行，那么我们就直接开始撸代码。<br>先搭建一个three的基本场景起来，这里不在复述。<br>然后新建一个平面，我们把图片贴在这个平面上即可。</p></div><div class="post-body-more"><a class="post-body-more__a" href="/2015/12/02/threejs/echarts%E7%94%9F%E6%88%90%E7%9A%84%E5%9B%BE%E8%A1%A8%E5%9C%A8three.js%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/">阅读全文 »</a></div></div></article><article class="post"><header class="post-header"><h1 class="post-header-title"><a class="post-header-title__a" href="/2015/12/01/webgl%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/">webgl 学习资源</a></h1><div class="post-header-meta"><span class="post-header-meta-create"><i class="fa fa-calendar-o"></i><span>发表于 </span><span>2015-12-01</span></span><span class="post-header-meta-update"><i class="fa fa-calendar-check-o"></i><span>更新于 </span><span>2020-10-19</span></span></div></header><div class="post-body"><div class="post-body-excerpt"><h3 id="书籍列表"><span class="heading-link">书籍列表</span></h3><ol>
-<li>计算机图形图像处理基础</li>
-<li>WebGL编程指南</li>
-<li>Three.js开发指南</li>
-<li>OpenGL ES 2.0 游戏开发</div><div class="post-body-more"><a class="post-body-more__a" href="/2015/12/01/webgl%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/">阅读全文 »</a></div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><aside class="sidebar" id="sidebar"><div class="sidebar-inner"><section class="sidebar-toc hide"></section><!-- ov = overview --><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/uploads/avatar.png" alt="avatar"></div><p class="sidebar-ov-author__p">Web3D 99号空间站</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social__item" href="https://scqilin.github.io/" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><i class="sidebar-ov-social__item--icon fa fa-github"></i></a><a class="sidebar-ov-social__item" href="https://blog.csdn.net/lin5165352" target="_blank" rel="noopener" data-popover="CSDN" data-popover-pos="up"><span class="sidebar-ov-social__item--logo">C</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state__a posts" href="/archives/"><div class="sidebar-ov-state__a--count">9</div><div class="sidebar-ov-state__a--name">归档</div></a><a class="sidebar-ov-state__a categories" href="/categories/"><div class="sidebar-ov-state__a--count">3</div><div class="sidebar-ov-state__a--name">分类</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg" alt="知识共享"></a></div></section></div></aside><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>&copy; 2020</span><span class="fa fa-heart footer-icon"></span><span>scqilin.</span></div><div><span>由 <a href="http://hexo.io/" title="hexo" target="_blank" rel="noopener">hexo</a> 强力驱动</span><span> v4.0.0.</span><span class="separator">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="stun" target="_blank" rel="noopener">stun</a></span><span> v1.5.4.</span></div><div class="busuanzi"><span class="busuanzi-site_uv"><i class="fa fa-user"></i><span>访问人数 </span><span id="busuanzi_value_site_uv"></span></span><span class="separator">|</span><span class="busuanzi-site_pv"><i class="fa fa-eye"></i><span>浏览总量 </span><span id="busuanzi_value_site_pv"></span></span><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script></div></div></footer><div class="loading-bar" id="loading-bar"><div class="progress"></div></div><div class="back2top" id="back2top"><i class="back2top-icon fa fa-rocket"></i></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script><script src="/js/utils.js?v=1.5.4"></script><script src="/js/stun-boot.js?v=1.5.4"></script><script src="/js/scroll.js?v=1.5.4"></script><script src="/js/header.js?v=1.5.4"></script><script src="/js/sidebar.js?v=1.5.4"></script></body></html>
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-10-19 19:32:18'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {
+  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }
+})()</script><meta name="generator" content="Hexo 4.2.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">9</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">3</div></a></div></div></div><hr/></div></div><div id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Three.js-WebGL</a></span><span id="menus"><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">Three.js-WebGL</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/19/threejs/%E6%A1%88%E4%BE%8B%E5%88%97%E8%A1%A8/" title="案例列表">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="案例列表"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/19/threejs/%E6%A1%88%E4%BE%8B%E5%88%97%E8%A1%A8/" title="案例列表">案例列表</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-19T08:09:58.000Z" title="发表于 2020-10-19 16:09:58">2020-10-19</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/three-js/">three.js</a></span></div><div class="content">案例列表three开发贪吃蛇three开发贪吃蛇
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="hexo使用教程">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo使用教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="hexo使用教程">hexo使用教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-12-02T10:49:16.000Z" title="发表于 2019-12-02 18:49:16">2019-12-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/hexo/">hexo</a></span></div><div class="content">hexo使用教程
+
+资源文件引用地址以斜杠开头指向source文件夹，不会被编译到public目录下， 如/assets/img.jpg。图片![]()，链接[](),区别在于加！是图片连接。不加是普通资源文件。
+webgl-reference-card-1_0.pdf
+新建md模板12345678---title: 标题date: 2019-12-02 18:49:16categories:    分类名称---文件摘要&lt;!-- more --&gt;
+可以通过命令创建md文章，也可以自己创建，而且可以更加灵活的配置。分类名称可以任意，如果之前没有相同的分类，就会新建该分类。more标签前面的会显示为文章摘要。
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="hexo安装教程">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo安装教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="hexo安装教程">hexo安装教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-12-02T10:49:16.000Z" title="发表于 2019-12-02 18:49:16">2019-12-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/hexo/">hexo</a></span></div><div class="content">官网地址：https://hexo.io/安装基本知识：git、node、npm。了解会用即可。安装基本步骤：
+
+12345npm install hexo-cli -g //全局安装hexo核心hexo init blog //初始化一个博客，这里的blog是文件夹的名称，你可以换成其他的cd blog // cd命令，进入到blog文件夹下npm install // 安装npm 包 如果速度慢的可以试试cnpm(自己百度)hexo server //运行server命令
+
+
+然后访问http://localhost:4000/就会打开一个页面了，像下面的样子
+看hexo的版本升级到了4.0 但是-cli的版本依然是3.1.0。
+发布npm run deploy 可以先clean，修改一下命令：&quot;deploy&quot;: &quot;hexo clean &amp; hexo deploy&quot;,
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/03/28/threejs/Bloom%E6%B3%9B%E5%85%89/" title="Bloom泛光">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Bloom泛光"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/03/28/threejs/Bloom%E6%B3%9B%E5%85%89/" title="Bloom泛光">Bloom泛光</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-03-28T04:01:07.000Z" title="发表于 2019-03-28 12:01:07">2019-03-28</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/three-js/">three.js</a></span></div><div class="content">Bloom泛光泛光（Bloom） 是一种现实世界中的光现象，通过它能够以较为适度的渲染性能成本极大地增加渲染图像的真实感。用肉眼观察黑暗背景下非常明亮 的物体时会看到泛光效果。亮度更高的物体还会造成其他效果（条纹、镜头光斑），但这些效果不在经典的泛光 效果范畴内。我们的显示器（电视、TFT屏等）通常不支持HDR（高动态范围），因此实际上无法渲染太亮的物体。于是我们模拟了 当光线射到胶片（胶片次表面散射）或摄像机前（乳白色玻璃滤光片）时眼睛中出现的效果（视网膜的次表面散射）。这种效果不一定符合实际 情况，但它可以帮助表现对象的相对亮度，或者给屏幕上显示的LDR（低动态范围）图像添加真实感。
+
+泛光可以用一个高斯模糊来实现。为了提高质量，我们将多个不同半径的高斯模糊组合起来。为了获得更好的性能，我们在大大降低的分辨率下 进行很宽范围的模糊。在UE 3中，高斯模糊的分辨率为1/4、1/8和1/16。而现在我们可以使用多种模糊，分辨率从1/2（Blur1）到1/32（Blur5）。
+通过改变模糊效果的组合方式，我们可以进行更多的控制，取得更高的质量。为了获得最佳的性能，应该使用高分辨率模糊（小 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2018/12/02/threejs/%E5%BE%85%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/" title="待整理笔记">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="待整理笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/12/02/threejs/%E5%BE%85%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/" title="待整理笔记">待整理笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-12-02T10:49:16.000Z" title="发表于 2018-12-02 18:49:16">2018-12-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/three-js/">three.js</a></span></div><div class="content">es6 three.js 开发移除场景 清空内存 性能优化
+
+123456789101112131415移除场景有效，会在div中删除canvas。document.getElementById(webglDivId).removeChild(renderer.domElement);m.dispose(); 需要dispose 所有的网格和材质//渲染动画let globalID;function render() &#123;       globalID = requestAnimationFrame(render);    renderer.render(scene, camera);   &#125;//套路一下 也许有用 cancelAnimationFrame(globalID);  //取消定时器，先得给定时器命名。THREE.Cache.clear()     // 清除cachescene = null; //设置null ,需要先取消定时器document.getElementById(webglDivId).removeChild(renderer.domEle ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2018/12/01/typescript/typescript%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="typescript基本用法">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="typescript基本用法"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/12/01/typescript/typescript%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="typescript基本用法">typescript基本用法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-12-01T10:49:16.000Z" title="发表于 2018-12-01 18:49:16">2018-12-01</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/typescript/">typescript</a></span></div><div class="content">1 TypeScript介绍2 自动化工作流程3 使用函数4 TypeScript中面向对象的编程5 运行时6 应用性能7 应用测试8 装饰器9 应用框架10 汇总
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2015/12/02/threejs/three-js%E5%85%A5%E9%97%A8/" title="three.js入门">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="three.js入门"></a></div><div class="recent-post-info"><a class="article-title" href="/2015/12/02/threejs/three-js%E5%85%A5%E9%97%A8/" title="three.js入门">three.js入门</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2015-12-02T10:49:16.000Z" title="发表于 2015-12-02 18:49:16">2015-12-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/three-js/">three.js</a></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2015/12/02/threejs/echarts%E7%94%9F%E6%88%90%E7%9A%84%E5%9B%BE%E8%A1%A8%E5%9C%A8three.js%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/" title="echarts生成的图表在three.js中的应用">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="echarts生成的图表在three.js中的应用"></a></div><div class="recent-post-info"><a class="article-title" href="/2015/12/02/threejs/echarts%E7%94%9F%E6%88%90%E7%9A%84%E5%9B%BE%E8%A1%A8%E5%9C%A8three.js%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/" title="echarts生成的图表在three.js中的应用">echarts生成的图表在three.js中的应用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2015-12-02T10:49:16.000Z" title="发表于 2015-12-02 18:49:16">2015-12-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/three-js/">three.js</a></span></div><div class="content">echarts生成的图表在three.js中的应用最近群里有几个人问，如何把echarts的图表贴在three.js的模型上。这个问题其实很简单，因为二者都是渲染成canvas的，直接用echarts生成的canvas当作贴图就可以了。方法确定可行，那么我们就直接开始撸代码。先搭建一个three的基本场景起来，这里不在复述。然后新建一个平面，我们把图片贴在这个平面上即可。
+
+123456789addPlane() &#123;    var geometry = new THREE.PlaneGeometry(10,10);    var material = new THREE.MeshBasicMaterial(&#123;         side: THREE.DoubleSide,        // transparent:true    &#125;);    this.plane = new THREE.Mesh(geometry, material);    this.scene.add(this.plane);&#125;
+摆好相机的角度，此时场景中是一个白板。然后 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2015/12/01/webgl%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/" title="webgl 学习资源">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="webgl 学习资源"></a></div><div class="recent-post-info"><a class="article-title" href="/2015/12/01/webgl%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/" title="webgl 学习资源">webgl 学习资源</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2015-12-01T10:49:16.000Z" title="发表于 2015-12-01 18:49:16">2015-12-01</time></span></div><div class="content">书籍列表
+计算机图形图像处理基础
+WebGL编程指南
+Three.js开发指南
+OpenGL ES 2.0 游戏开发 
+书籍介绍：
+《计算机图形图像处理基础》2011年.电子工业出版社出版的.唐波全书共分10章，主要内容包括了图形与图像处理的基本概念，图形图像处理的硬件与软件基础，基本图形的生成算法，图形显示技术，交互技术与图形软件标准，图像数字化与数学描述，图像正交变换，图像增强，图像恢复，图像分割。该书融合了计算机图形学与数字图像处理两门学科的知识，系统阐述了图形图像处理的基本理论、方法和技术，力图将图形与图像结合起来，从一个新的视角介绍可视信息处理中这两个最重要的领域。这本书可以作为课外书来读，不要去每章都去理解，最好都过一遍，做到心中有数。以后会用到的。  
+
+
+
+
+《WebGL编程指南》这本书要认真读，反复的阅读。入门阶段读一遍不求甚解，在提升阶段就需要掌握了。   
+
+《Three.js开发指南》（中文第2版）看第二版，第一版太旧了，而且第二版也有点旧了。这本书要认真读，把源码下载下来参考，每个案例都要自己动手写一遍。由于版本更新比较快，书中很多内容以及废弃了，注意案例中的 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">scqilin</div><div class="author-info__description">Three.js-WebGL</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length_num">9</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length_num">3</div></a></div></div><a class="button--animated" id="card-info-btn" href="https://github.com/xxxxxx" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="sticky_layout"><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/10/19/threejs/%E6%A1%88%E4%BE%8B%E5%88%97%E8%A1%A8/" title="案例列表"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="案例列表"/></a><div class="content"><a class="title" href="/2020/10/19/threejs/%E6%A1%88%E4%BE%8B%E5%88%97%E8%A1%A8/" title="案例列表">案例列表</a><time datetime="2020-10-19T08:09:58.000Z" title="发表于 2020-10-19 16:09:58">2020-10-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="hexo使用教程"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo使用教程"/></a><div class="content"><a class="title" href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="hexo使用教程">hexo使用教程</a><time datetime="2019-12-02T10:49:16.000Z" title="发表于 2019-12-02 18:49:16">2019-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="hexo安装教程"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo安装教程"/></a><div class="content"><a class="title" href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="hexo安装教程">hexo安装教程</a><time datetime="2019-12-02T10:49:16.000Z" title="发表于 2019-12-02 18:49:16">2019-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/03/28/threejs/Bloom%E6%B3%9B%E5%85%89/" title="Bloom泛光"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Bloom泛光"/></a><div class="content"><a class="title" href="/2019/03/28/threejs/Bloom%E6%B3%9B%E5%85%89/" title="Bloom泛光">Bloom泛光</a><time datetime="2019-03-28T04:01:07.000Z" title="发表于 2019-03-28 12:01:07">2019-03-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2018/12/02/threejs/%E5%BE%85%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/" title="待整理笔记"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="待整理笔记"/></a><div class="content"><a class="title" href="/2018/12/02/threejs/%E5%BE%85%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/" title="待整理笔记">待整理笔记</a><time datetime="2018-12-02T10:49:16.000Z" title="发表于 2018-12-02 18:49:16">2018-12-02</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/hexo/"><span class="card-category-list-name">hexo</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/three-js/"><span class="card-category-list-name">three.js</span><span class="card-category-list-count">5</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/typescript/"><span class="card-category-list-name">typescript</span><span class="card-category-list-count">1</span></a></li>
+            
+            </ul></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/12/"><span class="card-archive-list-date">十二月 2019</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/03/"><span class="card-archive-list-date">三月 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/12/"><span class="card-archive-list-date">十二月 2018</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2015/12/"><span class="card-archive-list-date">十二月 2015</span><span class="card-archive-list-count">3</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">9</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-10-19T11:32:15.313Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By scqilin</div><div class="framework-info"><span>框架 </span><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
