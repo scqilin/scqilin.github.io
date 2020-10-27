@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>滑杆吊车模拟</title>
+<script type="text/javascript" src="./js/bundlehuagan.js"></script></head>
+
+<body>
+    <script type="text/javascript">
+        var tcart = new threeInit();
+        tcart.drawScene();
+        // a [-20.20] b[2,18]
+        var time1 = -20, time2 = 2;
+        var inter = setInterval(function () {
+            time1++;
+            time2++;
+            tcart.setPositon(time1, time2);
+            if (time1 >= 20) {
+                window.clearInterval(inter);
+            }
+        }, 100);
+    </script>
+</body>
+
+</html>
