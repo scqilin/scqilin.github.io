@@ -1,0 +1,573 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Three.js-WebGL | Three.js-WebGL</title><meta name="keywords" content="Three.js WebGL"><meta name="author" content="scqilin"><meta name="copyright" content="scqilin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="贪吃蛇                             body {             margin: 0;             overflow: hidden;             color: rgb(253, 2, 2);             font-family: Monospace;             fon">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Three.js-WebGL">
+<meta property="og:url" content="https://scqilin.github.io/assets/example/%E8%B4%AA%E5%90%83%E8%9B%87.html">
+<meta property="og:site_name" content="Three.js-WebGL">
+<meta property="og:description" content="贪吃蛇                             body {             margin: 0;             overflow: hidden;             color: rgb(253, 2, 2);             font-family: Monospace;             fon">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://scqilin.github.io/img/q9.jpg">
+<meta property="article:published_time" content="2021-09-08T09:38:16.896Z">
+<meta property="article:modified_time" content="2021-04-06T04:53:10.477Z">
+<meta property="article:author" content="scqilin">
+<meta property="article:tag" content="Three.js WebGL">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://scqilin.github.io/img/q9.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://scqilin.github.io/assets/example/%E8%B4%AA%E5%90%83%E8%9B%87"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Three.js-WebGL',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-04-06 12:53:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/lil128i.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('/img/q1.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Three.js-WebGL</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">Three.js-WebGL</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贪吃蛇</title>
+    <script type="text/javascript" src="./js/three.min.js"></script>
+    <script type="text/javascript" src="./js/stats.min.js"></script>
+    <!-- <script type="text/javascript" src="../js/controls/OrbitControls.js"></script> -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            color: rgb(253, 2, 2);
+            font-family: Monospace;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #mes {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            z-index: 100;
+        }
+
+        #score {
+            position: absolute;
+            top: 45px;
+            width: 100%;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="webgl-output"></div>
+    <div id="mes">WSAD（↑↓←→）控制上下左右移动，空格键暂停。</div>
+    <div id="score"></div>
+    <script type="text/javascript">
+
+        function init() {
+            let frustumSize = 35;
+
+            let scene, camera, renderer, light, controls;
+            let clock = new THREE.Clock();
+            // let state = new Stats();
+            let cubes = [];
+            let headx = 0, headz = 0;
+            let endx = 0;
+            let endz = 0;
+            let food
+            let cr = 1, cg = 0.1, cb = 0.7
+            let key = 'w', lastKey = 'w';
+            let waiting = false, over = false;
+            let number = 0, leaver = 1;
+            let ks = 40;
+            let startX, startZ;
+            let moveEndX, moveEndZ;
+            let moveX, moveZ;
+
+            // document.body.appendChild(state.domElement);
+            drawScene();
+            // let setInt = setInterval(interval, 300);
+            function drawScene() {
+                iniScene();
+                iniLight();
+                // orbitControls();
+                windowResize();
+                cubes.push(cubeHe(1.2, 1 / 2, 1 / 2, 5 + 0.5));
+                cubes.push(cubeDr(1, 1 / 2, 1 / 2, 6 + 0.5));
+                food = sphereDr(1 / 2, 0 + 0.5, 0.5, -5 + 0.5);
+                iniPlane();
+                render();
+
+                document.getElementById('score').innerText = '总分：' + (cubes.length - 1) + '分';
+
+                document.body.addEventListener("keydown", function (k) {
+                    if (k.code == "KeyW" || k.code == "ArrowUp") {
+                        key = 'w'
+                    }
+                    if (k.code == "KeyS" || k.code == "ArrowDown") {
+                        key = 's'
+                    }
+                    if (k.code == "KeyA" || k.code == "ArrowLeft") {
+                        key = 'a'
+                    }
+                    if (k.code == "KeyD" || k.code == "ArrowRight") {
+                        key = 'd'
+                    }
+                    if (k.code == "Space") {
+                        waiting = !waiting;
+                        if (waiting) {
+                            document.getElementById('score').innerText = '得分：' + (cubes.length - 1) + '分。游戏暂停，按下空格键继续';
+                        }
+                    }
+                });
+                
+                
+                document.body.addEventListener("touchstart", function (e) {
+                    e.preventDefault();
+                    startX = e.changedTouches[0].pageX;
+                    startZ = e.changedTouches[0].pageY;
+                });
+                document.body.addEventListener("touchmove", function (e) {
+                    e.preventDefault();
+                    moveEndX = e.changedTouches[0].pageX;
+                    moveEndZ = e.changedTouches[0].pageY;
+                    movex = moveEndX - startX
+                    movez = moveEndZ - startZ
+                    console.log(movex)
+                    if (Math.abs(movex) >= Math.abs(movez)) {
+                        if (movex > 0) {
+                            key = 'd'
+                        }
+                        if (movex < 0) {
+                            key = 'a'
+                        }
+                    } else {
+                        if (movez < 0) {
+                            key = 'w'
+                        }
+                        if (movez > 0) {
+                            key = 's'
+                        }
+                    }
+                });
+            }
+
+            function interval() {
+                if (cubes.length < 1) return
+                if (key == 'w') {
+                    if (lastKey == 's') {
+                        s();
+                    } else {
+                        w();
+                    }
+
+                } else if (key == 's') {
+                    if (lastKey == 'w') {
+                        w();
+                    } else {
+                        s();
+                    }
+
+                } else if (key == 'a') {
+                    if (lastKey == 'd') {
+                        d();
+                    } else {
+                        a();
+                    }
+
+                } else if (key == 'd') {
+                    if (lastKey == 'a') {
+                        a();
+                    } else {
+                        d();
+                    }
+                } else {
+                    // nul();
+                }
+                function nul() {
+                    if (waiting == true) return
+                    changePos(cubes);
+                    cubes[0].position.z -= 1;
+                    headz = cubes[0].position.z;
+                    eating(); crashSelf();
+                }
+                function w() {
+                    if (waiting == true) return
+                    changePos(cubes);
+                    cubes[0].position.z -= 1;
+                    headz = cubes[0].position.z;
+                    eating(); crashSelf();
+                    lastKey = "w";
+                }
+                function s() {
+                    if (waiting == true) return
+                    changePos(cubes)
+                    cubes[0].position.z += 1;
+                    headz = cubes[0].position.z;
+                    eating(); crashSelf();
+                    lastKey = "s"
+                }
+                function a() {
+                    if (waiting == true) return
+                    changePos(cubes)
+                    cubes[0].position.x -= 1;
+                    headx = cubes[0].position.x;
+                    eating(); crashSelf();
+                    lastKey = "a"
+                }
+                function d() {
+                    if (waiting == true) return
+                    changePos(cubes)
+                    cubes[0].position.x += 1;
+                    headx = cubes[0].position.x;
+                    eating(); crashSelf();
+                    lastKey = "d"
+                }
+
+                crashWall()
+            }
+
+            function crashWall() {
+
+                if (headx > 10 || headx < -10 || headz > 10 || headz < -10) {
+                    // clearInterval(setInt);
+                    over = true;
+                    alert('碰到边界，游戏结束，总分：' + cubes.length + '分');
+                }
+
+            }
+            function crashSelf() {
+                if (cubes.length > 3) {
+                    for (let i = 1; i < cubes.length; i++) {
+                        // console.log(cubes)
+                        if (cubes[0].position.x === cubes[i].position.x && cubes[0].position.z === cubes[i].position.z) {
+                            // clearInterval(setInt);
+                            over = true;
+                            alert('碰到身体，游戏结束，总分：' + (cubes.length - 1) + '分');
+                        }
+                    }
+                }
+            }
+
+
+            function changePos(array) {
+                if (array.length < 1) return
+                let len = array.length - 1
+                endx = array[len].position.x;
+                endz = array[len].position.z;
+                for (let i = len; i > 0; i--) {
+                    cubes[i].position.z = cubes[i - 1].position.z;
+                    cubes[i].position.x = cubes[i - 1].position.x;
+                }
+            }
+            function eating() {
+                headx = cubes[0].position.x;
+                headz = cubes[0].position.z;
+                if (food.position.x === headx && food.position.z === headz) {
+                    cubes.push(cubeDr(1, endx, 0.5, endz))
+                    let x = Math.round(Math.random() * 18 - 9) + 0.5;
+                    let z = Math.round(Math.random() * 18 - 9) + 0.5;
+                    for (let i = 1; i < cubes.length; i++) {
+                        if (cubes[i].position.x == x && cubes[i].position.z == z) {
+                            x = Math.round(Math.random() * 18 - 9) + 0.5;
+                            z = Math.round(Math.random() * 18 - 9) + 0.5;
+                        }
+                    }
+                    food.position.x = x;
+                    food.position.z = z;
+                    document.getElementById('score').innerText = '得分：' + (cubes.length - 1) + '分';
+                }
+            }
+
+            function iniScene() {
+                scene = new THREE.Scene();
+                // camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 3000);
+                camera = new THREE.OrthographicCamera(window.innerWidth / -frustumSize, window.innerWidth / frustumSize, window.innerHeight / frustumSize, window.innerHeight / -frustumSize, -200, 500);
+
+                // camera.zoom = 10
+                renderer = new THREE.WebGLRenderer({
+                    antialias: true,
+                });
+                camera.position.set(0, 80, 0);
+                camera.lookAt(scene.position);
+                renderer.setClearColor(0x222222);
+                // renderer.shadowMap.enabled = true;
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                // scene.add(new THREE.AxesHelper(4));
+                document.getElementById('webgl-output').appendChild(renderer.domElement);
+            }
+            function iniLight() {
+                light = new THREE.AmbientLight(0x333333);
+                scene.add(light);
+
+                light = new THREE.SpotLight(0x888888);
+                light.position.set(0, 40, 30);
+                light.castShadow = true;
+                light.shadow.mapSize.height = 4096;
+                light.shadow.mapSize.width = 4096;
+                scene.add(light);
+
+                light = new THREE.HemisphereLight(0xffffff, 0x444444, 0.6);
+                light.position.set(0, 200, 0);
+                scene.add(light);
+            }
+            function iniPlane() {
+                let planeGeo = new THREE.PlaneGeometry(20, 20);
+                let planeMat = new THREE.MeshPhongMaterial({ color: 0x999999 });
+                let plane = new THREE.Mesh(planeGeo, planeMat);
+                plane.receiveShadow = true;
+                plane.position.y = -0.01;
+                plane.rotation.x = -0.5 * Math.PI;
+                scene.add(plane);
+
+                let planeGeo1 = new THREE.PlaneGeometry(22, 22);
+                let planeMat1 = new THREE.MeshPhongMaterial({ color: 0xffffff });
+                let plane1 = new THREE.Mesh(planeGeo1, planeMat1);
+                plane1.receiveShadow = true;
+                plane1.position.y = -0.02;
+                plane1.rotation.x = -0.5 * Math.PI;
+                scene.add(plane1);
+
+                let grid = new THREE.GridHelper(20, 20, 0x000000, 0x000000);
+                grid.material.transparent = true;
+                grid.material.opacity = 0.1;
+                scene.add(grid);
+            }
+
+            function cubeHe(a, x, y, z) {
+                let cubeGeo = new THREE.BoxGeometry(a, a, a);
+                let cubeMat = new THREE.MeshPhongMaterial({
+                    color: 0xfff000
+                });
+                let cube = new THREE.Mesh(cubeGeo, cubeMat);
+                cube.position.set(x, y, z);
+                scene.add(cube);
+                return cube;
+            }
+
+
+            function cubeDr(a, x, y, z) {
+                cr -= 0.04
+                if (cr < 0) {
+                    cr = 0,
+                        cg += 0.04
+                }
+                if (cg > 1) {
+                    cg = 1
+                    cb -= 0.04
+                }
+                if (cb < 0) {
+                    cr = 0.9;
+                    cg = 0.1;
+                    cb = 0.9;
+                }
+                let cubeGeo = new THREE.BoxGeometry(a, a, a);
+                let cubeMat = new THREE.MeshPhongMaterial({
+                    color: new THREE.Color(cr, cg, cb)
+                });
+                let cube = new THREE.Mesh(cubeGeo, cubeMat);
+                cube.position.set(x, y, z);
+                // cube.castShadow = true;
+                scene.add(cube);
+                return cube;
+            }
+
+
+            function sphereDr(r, x, y, z) {
+                let geometry = new THREE.SphereGeometry(r, 32, 32);
+                let material = new THREE.MeshPhongMaterial({
+                    color: 0x33ccff,
+                });
+                mesh = new THREE.Mesh(geometry, material);
+                mesh.position.set(x, y, z);
+                // mesh.castShadow = true;
+                scene.add(mesh);
+                return mesh;
+            }
+
+
+            function orbitControls() {
+                controls = new THREE.OrbitControls(camera, renderer.domElement);
+                //controls.autoRotate = true;
+                controls.autoRotateSpeed = 0.2;
+                controls.enableDamping = true;
+                controls.dampingFactor = 0.4;
+                controls.enableZoom = true;
+                controls.minDistance = 5;
+                controls.maxDistance = 1000;
+                controls.enablePan = false;
+            }
+            function windowResize() {
+                window.addEventListener('resize', onWindowResize, false);
+
+                function onWindowResize() {
+                    // camera.aspect = window.innerWidth / window.innerHeight;
+                    // camera.updateProjectionMatrix();
+                    renderer.setSize(window.innerWidth, window.innerHeight);
+
+                    camera.left = window.innerWidth / -frustumSize;
+                    camera.right = window.innerWidth / frustumSize;
+                    camera.top = window.innerHeight / frustumSize;
+                    camera.bottom = window.innerHeight / -frustumSize;
+                    camera.updateProjectionMatrix();
+
+                }
+            }
+
+            function render() {
+                number++;
+                let delta = clock.getDelta();
+                requestAnimationFrame(render);
+                if (number > 999999) number = 1;
+                if (cubes.length > 5) ks = 30
+                if (cubes.length > 10) ks = 20
+                if (cubes.length > 15) ks = 15
+                if (cubes.length > 20) ks = 10
+                if (number % ks == 1 && !over) {
+                    interval()
+                }
+
+
+
+                renderer.render(scene, camera);
+                // state.update();
+                // controls.update(delta);
+            }
+        }
+        window.onload = init;
+    </script>
+</body>
+
+</html></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/lil128i.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">scqilin</div><div class="author-info__description">Three.js-WebGL</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/scqilin"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">可视化的小站</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2021/09/08/hello-world/" title="Hello World">Hello World</a><time datetime="2021-09-08T08:54:25.829Z" title="发表于 2021-09-08 16:54:25">2021-09-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/19/threejs/%E6%A1%88%E4%BE%8B%E5%88%97%E8%A1%A8/" title="案例列表"><img src="/img/q2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="案例列表"/></a><div class="content"><a class="title" href="/2020/10/19/threejs/%E6%A1%88%E4%BE%8B%E5%88%97%E8%A1%A8/" title="案例列表">案例列表</a><time datetime="2020-10-19T08:09:58.000Z" title="发表于 2020-10-19 16:09:58">2020-10-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/02/19/angular/Angular%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="Angular学习笔记"><img src="/img/q5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Angular学习笔记"/></a><div class="content"><a class="title" href="/2020/02/19/angular/Angular%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="Angular学习笔记">Angular学习笔记</a><time datetime="2020-02-19T08:09:58.000Z" title="发表于 2020-02-19 16:09:58">2020-02-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="hexo使用教程"><img src="/img/q3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo使用教程"/></a><div class="content"><a class="title" href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="hexo使用教程">hexo使用教程</a><time datetime="2019-12-02T10:49:16.000Z" title="发表于 2019-12-02 18:49:16">2019-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="hexo安装教程"><img src="/img/q4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo安装教程"/></a><div class="content"><a class="title" href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="hexo安装教程">hexo安装教程</a><time datetime="2019-12-02T10:49:16.000Z" title="发表于 2019-12-02 18:49:16">2019-12-02</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Angular/"><span class="card-category-list-name">Angular</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/hexo/"><span class="card-category-list-name">hexo</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/three-js/"><span class="card-category-list-name">three.js</span><span class="card-category-list-count">5</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/typescript/"><span class="card-category-list-name">typescript</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Angular/" style="font-size: 1.1em; color: #999">Angular</a> <a href="/tags/three-js/" style="font-size: 1.1em; color: #999">three.js</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/02/"><span class="card-archive-list-date">二月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/12/"><span class="card-archive-list-date">十二月 2019</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/03/"><span class="card-archive-list-date">三月 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/12/"><span class="card-archive-list-date">十二月 2018</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2015/12/"><span class="card-archive-list-date">十二月 2015</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">11</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-09-08T09:42:59.653Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By scqilin</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

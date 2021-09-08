@@ -1,207 +1,200 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Three.js-WebGL - Dawn of Man starts in the Stone Age, and takes you up to the Iron Age, spanning more than 10,000 years of human prehistory.</title><meta name="keywords" content="Three.js WebGL"><meta name="author" content="scqilin"><meta name="copyright" content="scqilin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Three.js-WebGL">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Three.js-WebGL">
+<meta property="og:url" content="https://scqilin.github.io/index.html">
+<meta property="og:site_name" content="Three.js-WebGL">
+<meta property="og:description" content="Three.js-WebGL">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://scqilin.github.io/img/lil128i.jpg">
+<meta property="article:author" content="scqilin">
+<meta property="article:tag" content="Three.js WebGL">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://scqilin.github.io/img/lil128i.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://scqilin.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Three.js-WebGL',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-09-08 17:42:59'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/08/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-09-08T08:54:25.829Z" itemprop="datePublished">2021-09-08</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/08/hello-world/">Hello World</a>
-    </h1>
-  
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/lil128i.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/q1.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Three.js-WebGL</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Three.js-WebGL</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/09/08/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-08T08:54:25.829Z" title="发表于 2021-09-08 16:54:25">2021-09-08</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+More info: Writing
+Run server1$ hexo server
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+More info: Server
+Generate static files1$ hexo generate
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+More info: Generating
+Deploy to remote sites1$ hexo deploy
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+More info: Deployment
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/19/threejs/%E6%A1%88%E4%BE%8B%E5%88%97%E8%A1%A8/" title="案例列表">     <img class="post_bg" src="/img/q2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="案例列表"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/19/threejs/%E6%A1%88%E4%BE%8B%E5%88%97%E8%A1%A8/" title="案例列表">案例列表</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-19T08:09:58.000Z" title="发表于 2020-10-19 16:09:58">2020-10-19</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/three-js/">three.js</a></span></div><div class="content">案例列表three开发贪吃蛇three开发贪吃蛇
+滑杆吊车模拟
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/02/19/angular/Angular%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="Angular学习笔记">     <img class="post_bg" src="/img/q5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Angular学习笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/02/19/angular/Angular%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="Angular学习笔记">Angular学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-02-19T08:09:58.000Z" title="发表于 2020-02-19 16:09:58">2020-02-19</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Angular/">Angular</a></span></div><div class="content">Angular学习
+Angular权威指南1 编写编写你的第一个应用1：环境搭建参考文档：https://angular.cn/guide/setup-local
+1.1：安装 Angular CLI你可以使用 Angular CLI 来创建项目、生成应用和库代码，以及执行各种持续开发任务，比如测试、打包和部署。全局安装 Angular CLI。要使用 npm 命令安装 CLI，请打开终端/控制台窗口，输入如下命令：npm install -g @angular/cli //版本号：9.0.2
+1.2：创建工作空间和初始应用你要在 Angular 工作区的上下文中开发应用。要创建一个新的工作空间和初始入门应用：
+1234运行 CLI 命令 ng new 并提供 my-app 名称作为参数，如下所示：ng new my-app //不能以数字开头，-后面也不能是数字。ng new 命令会提示你提供要把哪些特性包含在初始应用中。按 Enter 或 Return 键可以接受默认值。123
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+Angular CLI 会安装必要的 Angular npm 包和其他依赖包。这可能要花几分钟的时间。 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="hexo使用教程">     <img class="post_bg" src="/img/q3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo使用教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="hexo使用教程">hexo使用教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-12-02T10:49:16.000Z" title="发表于 2019-12-02 18:49:16">2019-12-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/hexo/">hexo</a></span></div><div class="content">hexo使用教程
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/08/hello-world/" data-id="cktb9r6n80000acfy134ba5it" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+资源文件引用地址以斜杠开头指向source文件夹，不会被编译到public目录下， 如/assets/img.jpg。图片![]()，链接[](),区别在于加！是图片连接。不加是普通资源文件。
+webgl-reference-card-1_0.pdf
+新建md模板12345678---title: 标题date: 2019-12-02 18:49:16categories:    分类名称---文件摘要&lt;!-- more --&gt;
+可以通过命令创建md文章，也可以自己创建，而且可以更加灵活的配置。分类名称可以任意，如果之前没有相同的分类，就会新建该分类。more标签前面的会显示为文章摘要。
+案例文件 跳过编译：
+12skip_render:  - &quot;assets/example/**&quot;</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="hexo安装教程">     <img class="post_bg" src="/img/q4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo安装教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="hexo安装教程">hexo安装教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-12-02T10:49:16.000Z" title="发表于 2019-12-02 18:49:16">2019-12-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/hexo/">hexo</a></span></div><div class="content">官网地址：https://hexo.io/安装基本知识：git、node、npm。了解会用即可。安装基本步骤：
+
+12345npm install hexo-cli -g //全局安装hexo核心hexo init blog //初始化一个博客，这里的blog是文件夹的名称，你可以换成其他的cd blog // cd命令，进入到blog文件夹下npm install // 安装npm 包 如果速度慢的可以试试cnpm(自己百度)hexo server //运行server命令 
 
 
+然后访问http://localhost:4000/就会打开一个页面了，像下面的样子
+看hexo的版本升级到了4.0 但是-cli的版本依然是3.1.0。
+发布npm run deploy 可以先clean，修改一下命令：&quot;deploy&quot;: &quot;hexo clean &amp; hexo deploy&quot;,
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/03/28/threejs/Bloom%E6%B3%9B%E5%85%89/" title="Bloom泛光">     <img class="post_bg" src="/img/q9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Bloom泛光"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/03/28/threejs/Bloom%E6%B3%9B%E5%85%89/" title="Bloom泛光">Bloom泛光</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-03-28T04:01:07.000Z" title="发表于 2019-03-28 12:01:07">2019-03-28</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/three-js/">three.js</a></span></div><div class="content">Bloom泛光泛光（Bloom） 是一种现实世界中的光现象，通过它能够以较为适度的渲染性能成本极大地增加渲染图像的真实感。用肉眼观察黑暗背景下非常明亮 的物体时会看到泛光效果。亮度更高的物体还会造成其他效果（条纹、镜头光斑），但这些效果不在经典的泛光 效果范畴内。我们的显示器（电视、TFT屏等）通常不支持HDR（高动态范围），因此实际上无法渲染太亮的物体。于是我们模拟了 当光线射到胶片（胶片次表面散射）或摄像机前（乳白色玻璃滤光片）时眼睛中出现的效果（视网膜的次表面散射）。这种效果不一定符合实际 情况，但它可以帮助表现对象的相对亮度，或者给屏幕上显示的LDR（低动态范围）图像添加真实感。
 
-  
+泛光可以用一个高斯模糊来实现。为了提高质量，我们将多个不同半径的高斯模糊组合起来。为了获得更好的性能，我们在大大降低的分辨率下 进行很宽范围的模糊。在UE 3中，高斯模糊的分辨率为1/4、1/8和1/16。而现在我们可以使用多种模糊，分辨率从1/2（Blur1）到1/32（Blur5）。
+通过改变模糊效果的组合方式，我们可以进行更多的控制，取得更高的质量。为了获得最佳的性能，应该使用高分辨率模糊（小 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2018/12/02/threejs/%E5%BE%85%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/" title="待整理笔记">     <img class="post_bg" src="/img/q2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="待整理笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/12/02/threejs/%E5%BE%85%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/" title="待整理笔记">待整理笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-12-02T10:49:16.000Z" title="发表于 2018-12-02 18:49:16">2018-12-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/three-js/">three.js</a></span></div><div class="content">es6 three.js 开发移除场景 清空内存 性能优化
 
+123456789101112131415移除场景有效，会在div中删除canvas。document.getElementById(webglDivId).removeChild(renderer.domElement);m.dispose(); 需要dispose 所有的网格和材质//渲染动画let globalID;function render() &#123;       globalID = requestAnimationFrame(render);    renderer.render(scene, camera);   &#125;//套路一下 也许有用 cancelAnimationFrame(globalID);  //取消定时器，先得给定时器命名。THREE.Cache.clear()     // 清除cachescene = null; //设置null ,需要先取消定时器document.getElementById(webglDivId).removeChild(renderer.domEle ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2018/12/01/typescript/typescript%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="typescript基本用法">     <img class="post_bg" src="/img/q9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="typescript基本用法"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/12/01/typescript/typescript%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="typescript基本用法">typescript基本用法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-12-01T10:49:16.000Z" title="发表于 2018-12-01 18:49:16">2018-12-01</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/typescript/">typescript</a></span></div><div class="content">1 TypeScript介绍2 自动化工作流程3 使用函数4 TypeScript中面向对象的编程5 运行时6 应用性能7 应用测试8 装饰器9 应用框架10 汇总
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2015/12/02/threejs/echarts%E7%94%9F%E6%88%90%E7%9A%84%E5%9B%BE%E8%A1%A8%E5%9C%A8three.js%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/" title="echarts生成的图表在three.js中的应用">     <img class="post_bg" src="/img/q2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="echarts生成的图表在three.js中的应用"></a></div><div class="recent-post-info"><a class="article-title" href="/2015/12/02/threejs/echarts%E7%94%9F%E6%88%90%E7%9A%84%E5%9B%BE%E8%A1%A8%E5%9C%A8three.js%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/" title="echarts生成的图表在three.js中的应用">echarts生成的图表在three.js中的应用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2015-12-02T10:49:16.000Z" title="发表于 2015-12-02 18:49:16">2015-12-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/three-js/">three.js</a></span></div><div class="content">echarts生成的图表在three.js中的应用最近群里有几个人问，如何把echarts的图表贴在three.js的模型上。这个问题其实很简单，因为二者都是渲染成canvas的，直接用echarts生成的canvas当作贴图就可以了。方法确定可行，那么我们就直接开始撸代码。先搭建一个three的基本场景起来，这里不在复述。然后新建一个平面，我们把图片贴在这个平面上即可。
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/09/08/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+123456789addPlane() &#123;    var geometry = new THREE.PlaneGeometry(10,10);    var material = new THREE.MeshBasicMaterial(&#123;         side: THREE.DoubleSide,        // transparent:true    &#125;);    this.plane = new THREE.Mesh(geometry, material);    this.scene.add(this.plane);&#125;
+摆好相机的角度，此时场景中是一个白板。然后 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2015/12/02/threejs/three-js%E5%85%A5%E9%97%A8/" title="three.js入门">     <img class="post_bg" src="/img/q8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="three.js入门"></a></div><div class="recent-post-info"><a class="article-title" href="/2015/12/02/threejs/three-js%E5%85%A5%E9%97%A8/" title="three.js入门">three.js入门</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2015-12-02T10:49:16.000Z" title="发表于 2015-12-02 18:49:16">2015-12-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/three-js/">three.js</a></span></div><div class="content"></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/lil128i.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">scqilin</div><div class="author-info__description">Three.js-WebGL</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/scqilin"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">可视化的小站</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2021/09/08/hello-world/" title="Hello World">Hello World</a><time datetime="2021-09-08T08:54:25.829Z" title="发表于 2021-09-08 16:54:25">2021-09-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/19/threejs/%E6%A1%88%E4%BE%8B%E5%88%97%E8%A1%A8/" title="案例列表"><img src="/img/q2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="案例列表"/></a><div class="content"><a class="title" href="/2020/10/19/threejs/%E6%A1%88%E4%BE%8B%E5%88%97%E8%A1%A8/" title="案例列表">案例列表</a><time datetime="2020-10-19T08:09:58.000Z" title="发表于 2020-10-19 16:09:58">2020-10-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/02/19/angular/Angular%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="Angular学习笔记"><img src="/img/q5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Angular学习笔记"/></a><div class="content"><a class="title" href="/2020/02/19/angular/Angular%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="Angular学习笔记">Angular学习笔记</a><time datetime="2020-02-19T08:09:58.000Z" title="发表于 2020-02-19 16:09:58">2020-02-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="hexo使用教程"><img src="/img/q3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo使用教程"/></a><div class="content"><a class="title" href="/2019/12/02/hexo/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="hexo使用教程">hexo使用教程</a><time datetime="2019-12-02T10:49:16.000Z" title="发表于 2019-12-02 18:49:16">2019-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="hexo安装教程"><img src="/img/q4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo安装教程"/></a><div class="content"><a class="title" href="/2019/12/02/hexo/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="hexo安装教程">hexo安装教程</a><time datetime="2019-12-02T10:49:16.000Z" title="发表于 2019-12-02 18:49:16">2019-12-02</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Angular/"><span class="card-category-list-name">Angular</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/hexo/"><span class="card-category-list-name">hexo</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/three-js/"><span class="card-category-list-name">three.js</span><span class="card-category-list-count">5</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/typescript/"><span class="card-category-list-name">typescript</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Angular/" style="font-size: 1.1em; color: #999">Angular</a> <a href="/tags/three-js/" style="font-size: 1.1em; color: #999">three.js</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/02/"><span class="card-archive-list-date">二月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/12/"><span class="card-archive-list-date">十二月 2019</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/03/"><span class="card-archive-list-date">三月 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/12/"><span class="card-archive-list-date">十二月 2018</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2015/12/"><span class="card-archive-list-date">十二月 2015</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">11</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-09-08T09:42:59.653Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By scqilin</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
