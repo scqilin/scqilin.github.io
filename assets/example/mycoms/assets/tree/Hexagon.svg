@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="70px" viewBox="0 0 60 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>底图备份 2</title>
+    <defs>
+        <linearGradient x1="86.6011747%" y1="28.1822518%" x2="18.6816902%" y2="80.1114769%" id="linearGradient-1">
+            <stop stop-color="#FBFBFB" offset="0%"></stop>
+            <stop stop-color="#DEDEDE" offset="53.8829493%"></stop>
+            <stop stop-color="#C6C6C6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="44.4376106%" y1="78.7136326%" x2="13.3988253%" y2="16.2003249%" id="linearGradient-2">
+            <stop stop-color="#EEEEEE" offset="0%"></stop>
+            <stop stop-color="#FCFCFC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="99.847028%" y1="50%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#C7C7C7" offset="0%"></stop>
+            <stop stop-color="#EAEAEA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="底图备份-2" style="mix-blend-mode: color;" transform="translate(0.183371, 0.000000)">
+            <g id="编组-2">
+                <polygon id="路径-12" fill="url(#linearGradient-1)" points="29.4726509 0 59.8166287 18.4939356 59.8166287 53.0207176 30.888289 69.9132389 9.16135682e-13 53.0207176 9.09494702e-13 18.4939356"></polygon>
+                <polygon id="路径-13" fill="#FFFFFF" points="29.5344604 0 29.9083143 34.9566195 59.8166287 18.4939356"></polygon>
+                <polygon id="路径-13" fill="url(#linearGradient-2)" transform="translate(14.954157, 17.478310) scale(-1, 1) translate(-14.954157, -17.478310) " points="0.373853929 0 0 34.9566195 29.9083143 18.4939356"></polygon>
+                <polygon id="路径-13" fill="url(#linearGradient-3)" transform="translate(14.954157, 52.154419) scale(-1, -1) translate(-14.954157, -52.154419) " points="-8.6242772e-13 35.0002441 -8.83678855e-13 69.3088379 29.9083143 51.8398438 29.9083143 51.2881203"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

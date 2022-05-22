@@ -1,0 +1,666 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 7247,
+      "max": [
+        2.6715216636657715,
+        7.681135654449463,
+        15.120562553405762
+      ],
+      "min": [
+        -2.6715216636657715,
+        -14.366413116455078,
+        -1.933380365371704
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 86964,
+      "componentType": 5126,
+      "count": 7247,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 7247,
+      "max": [
+        0.5655720829963684,
+        0.9712165594100952
+      ],
+      "min": [
+        0.03800343722105026,
+        0.5328781604766846
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 20166,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 173928,
+      "componentType": 5126,
+      "count": 3418,
+      "max": [
+        2.2360787391662598,
+        7.564054012298584,
+        1.8651108741760254
+      ],
+      "min": [
+        -2.2360787391662598,
+        -6.371487140655518,
+        -1.113994836807251
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 214944,
+      "componentType": 5126,
+      "count": 3418,
+      "max": [
+        1.0,
+        1.0,
+        0.9999975562095642
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.9999974966049194
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 57976,
+      "componentType": 5126,
+      "count": 3418,
+      "max": [
+        0.19949789345264435,
+        0.9401191473007202
+      ],
+      "min": [
+        0.04880519211292267,
+        0.642417311668396
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 80664,
+      "componentType": 5125,
+      "count": 6018,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 255960,
+      "componentType": 5126,
+      "count": 78,
+      "max": [
+        -3.4480550289154053,
+        7.567818641662598,
+        1.3065621852874756
+      ],
+      "min": [
+        -12.963066101074219,
+        -10.994935989379883,
+        -0.0076544624753296375
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 256896,
+      "componentType": 5126,
+      "count": 78,
+      "max": [
+        0.32991108298301697,
+        0.23292334377765656,
+        0.9998582601547241
+      ],
+      "min": [
+        -0.21186310052871704,
+        -0.2591390609741211,
+        0.9152361750602722
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 85320,
+      "componentType": 5126,
+      "count": 78,
+      "max": [
+        0.9678925275802612,
+        0.9854831099510193
+      ],
+      "min": [
+        0.01628020778298378,
+        0.02413037046790123
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 104736,
+      "componentType": 5125,
+      "count": 300,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 257832,
+      "componentType": 5126,
+      "count": 1376,
+      "max": [
+        0.42596110701560974,
+        0.0696667954325676,
+        0.4260578155517578
+      ],
+      "min": [
+        -0.42596110701560974,
+        -0.37341687083244324,
+        -0.42586448788642883
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 274344,
+      "componentType": 5126,
+      "count": 1376,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 85944,
+      "componentType": 5126,
+      "count": 1376,
+      "max": [
+        0.31398114562034607,
+        0.9542089700698853
+      ],
+      "min": [
+        0.034677907824516296,
+        0.5553849935531616
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 105936,
+      "componentType": 5125,
+      "count": 4584,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 290856,
+      "componentType": 5126,
+      "count": 487,
+      "max": [
+        0.291699081659317,
+        0.029071763157844543,
+        0.10356968641281128
+      ],
+      "min": [
+        -0.29169896245002747,
+        -0.4095533490180969,
+        -0.8874163627624512
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 296700,
+      "componentType": 5126,
+      "count": 487,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 96952,
+      "componentType": 5126,
+      "count": 487,
+      "max": [
+        0.32382816076278687,
+        0.9755474328994751
+      ],
+      "min": [
+        0.03255593776702881,
+        0.5523847341537476
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 124272,
+      "componentType": 5125,
+      "count": 1029,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Ship Builder 9000 (https://sketchfab.com/Razer820)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/low-poly-sloop-sailing-ship-1b27f1f60e0e49f886984ea099977757",
+      "title": "Low Poly Sloop Sailing Ship"
+    },
+    "generator": "Sketchfab-12.64.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 128388,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 100848,
+      "byteOffset": 128388,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 302544,
+      "byteOffset": 229236,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 531780,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Boat_sketch_mat_baseColor.png"
+    },
+    {
+      "uri": "textures/Boat_sketch_mat_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Sail_main_sketch_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Boat_sketch_mat",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        },
+        "roughnessFactor": 0.6684486821012677
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Sail_main_sketch",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.46719082046604754
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Main hull_Boat sketch mat_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Decks_Boat sketch mat_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "sails_Sail main sketch_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Wheel_Boat sketch mat_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Wheel stand_Boat sketch mat_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 17,
+            "POSITION": 16,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Low Poly Sloop.fbx"
+    },
+    {
+      "children": [
+        3,
+        7,
+        9,
+        11
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        103.43326568603516,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.6851417917284653e-05,
+        -103.43326568603379,
+        0.0,
+        0.0,
+        103.43326568603379,
+        -1.6851417917284653e-05,
+        0.0,
+        -6.832511859688009e-17,
+        -0.1641359180212021,
+        0.002034928184002638,
+        1.0
+      ],
+      "name": "Main hull"
+    },
+    {
+      "mesh": 0,
+      "name": "Main hull_Boat sketch mat_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.646977960169688e-23,
+        0.0,
+        0.0,
+        2.646977960169688e-23,
+        1.0,
+        0.0,
+        6.605720132229165e-19,
+        1.9673827409860678e-05,
+        0.0015868775080889463,
+        1.0
+      ],
+      "name": "Decks"
+    },
+    {
+      "mesh": 1,
+      "name": "Decks_Boat sketch mat_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        7.549789948768648e-06,
+        -99.99999999999973,
+        0.0,
+        0.0,
+        7.549789954319763e-06,
+        5.551115123125783e-13,
+        -99.99999999999973,
+        0.0,
+        99.99999999999945,
+        7.549789954319763e-06,
+        7.549789948768648e-06,
+        0.0,
+        7.960363122253185e-15,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "sails"
+    },
+    {
+      "mesh": 2,
+      "name": "sails_Sail main sketch_0"
+    },
+    {
+      "children": [
+        10
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -6.850899808341637e-06,
+        241.03762817382813,
+        -518.85498046875,
+        1.0
+      ],
+      "name": "Wheel"
+    },
+    {
+      "mesh": 3,
+      "name": "Wheel_Boat sketch mat_0"
+    },
+    {
+      "children": [
+        12
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -6.850899808341637e-06,
+        241.03762817382813,
+        -518.85498046875,
+        1.0
+      ],
+      "name": "Wheel stand"
+    },
+    {
+      "mesh": 4,
+      "name": "Wheel stand_Boat sketch mat_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

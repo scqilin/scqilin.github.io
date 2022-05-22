@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="16px" viewBox="0 0 33 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>net</title>
+    <defs>
+        <linearGradient x1="50%" y1="0.763647697%" x2="50%" y2="99.1333861%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-305.000000, -379.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="net" transform="translate(305.000000, 379.000000)">
+                <path d="M18.8789014,16 C17.5928457,16 15.8844258,14.7896679 15.3344905,13.3336227 L15.3344905,13.3336227 L11.7456749,5.12 L8.15679979,13.3336227 C7.60686441,14.7896679 5.89844452,16 4.61152686,16 L0,16 L5.82690122,2.66550904 C6.63182535,1.09991352 8.23615914,0.04959928 9.50957766,0.00170936 L9.50845122,0 L13.982839,0 C15.2553245,0.04916168 16.8601591,1.09958736 17.6652509,2.66550904 L17.6652509,2.66550904 L21.2540406,10.88 L24.8432002,2.66550904 C25.6672413,1.06273064 27.3291149,0 28.6160326,0 L33,0 L27.1739607,13.3336227 C26.6248873,14.7896679 24.9156056,16 23.6286878,16 L18.8789014,16 Z" id="形状结合"></path>
+            </g>
+        </g>
+    </g>
+</svg>

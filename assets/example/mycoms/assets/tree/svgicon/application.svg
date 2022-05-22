@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>application</title>
+    <defs>
+        <linearGradient x1="50%" y1="1.50273485%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-576.000000, -438.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="application" transform="translate(576.000000, 438.000000)">
+                <path d="M13.7317626,0 C21.3156057,0 27.4635252,6.14791954 27.4635252,13.7317626 C27.4635252,21.3156057 21.3156057,27.4635252 13.7317626,27.4635252 C6.14791954,27.4635252 0,21.3156057 0,13.7317626 C0,6.14791954 6.14791954,0 13.7317626,0 Z M22.0987511,7.84110241 L7.84110241,22.0987511 C9.50666304,23.2735175 11.5386329,23.9635252 13.7317626,23.9635252 C19.3826091,23.9635252 23.9635252,19.3826091 23.9635252,13.7317626 C23.9635252,11.5386329 23.2735175,9.50666304 22.0987511,7.84110241 Z M13.7317626,3.5 C8.08091616,3.5 3.5,8.08091616 3.5,13.7317626 C3.5,15.9252064 4.19020542,17.9574442 5.36527883,19.6231383 L19.6231383,5.36527883 C17.9574442,4.19020542 15.9252064,3.5 13.7317626,3.5 Z" id="形状结合"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="26px" viewBox="0 0 23 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>app</title>
+    <defs>
+        <linearGradient x1="50%" y1="1.50273485%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="1.50273485%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-176.000000, -305.000000)" fill-rule="nonzero">
+            <g id="app" transform="translate(176.000000, 305.000000)">
+                <path d="M21.2307692,0 C22.2078884,0 23,0.776039767 23,1.73333333 L23,24.2666667 C23,25.2239602 22.2078884,26 21.2307692,26 L1.76923077,26 C0.792111596,26 0,25.2239602 0,24.2666667 L0,1.73333333 C0,0.776039767 0.792111596,0 1.76923077,0 L21.2307692,0 Z M19.903,18.2 L3.096,18.2 L3.09615385,22.9666667 L19.9038462,22.9666667 L19.903,18.2 Z M19.9038462,3.03333333 L3.09615385,3.03333333 L3.096,15.6 L19.903,15.6 L19.9038462,3.03333333 Z" id="形状结合" fill="url(#linearGradient-1)"></path>
+                <rect id="矩形备份-59" fill="url(#linearGradient-2)" x="8.40384615" y="19.4948047" width="6.19230769" height="2.6" rx="1.3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
