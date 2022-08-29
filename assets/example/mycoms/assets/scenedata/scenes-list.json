@@ -1,0 +1,14 @@
+{
+    "scene":[
+        {
+            "id":1,
+            "name":"大屏1",
+            "url":"./assets/scenedata/1.json"
+        },
+        {
+            "id":2,
+            "name":"大屏2",
+            "url":"./assets/scenedata/2.json"
+        }
+    ]
+}
