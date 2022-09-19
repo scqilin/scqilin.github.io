@@ -1,0 +1,11 @@
+{
+    "id":1,
+    "name":"第一个",
+    "options":{
+        "width":1920,
+        "height":1080,
+        "backgroundColor":"#000000",
+        "backgroundImage":""
+    },
+    "components":[{"selector":"ComputerRoomComponent","position":{"left":0,"top":0,"width":1920,"height":1080,"rotate":0},"uuid":"WmQoU7XzN50x0IFDCoVG6","type":"sincoms"}]
+}

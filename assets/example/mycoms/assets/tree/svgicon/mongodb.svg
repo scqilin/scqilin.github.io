@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="28px" viewBox="0 0 18 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mongodb</title>
+    <defs>
+        <linearGradient x1="50%" y1="0.763647697%" x2="50%" y2="99.1333861%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="34.0985121%" x2="50%" y2="99.1333861%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-783.000000, -303.000000)" fill-rule="nonzero">
+            <g id="mongodb" transform="translate(783.000000, 303.000000)">
+                <path d="M8.99101462,0 L5.48333955,4.94310328 L2.13740174,9.66485875 C0.804193171,11.2639229 0,13.3255344 0,15.583679 C0,18.8056294 1.6387121,21.6355064 4.11081991,23.2683186 L4.10520407,23.2683186 L4.22538373,23.3397852 C4.43092475,23.4698146 4.63534254,23.5928959 4.84762264,23.7060512 L6.55372519,24.711546 L8.11269193,25.633663 L8.11269193,28 L9,28 L9,0.0138962831 L8.99101462,0 Z" id="Fill-52" fill="url(#linearGradient-1)"></path>
+                <path d="M18,15.5779543 C18,13.2691162 17.1543549,11.1678252 15.7730222,9.55511421 L12.494884,4.93247268 L9,0 L9,28 L9.8849514,28 L9.8849514,25.632572 L11.4482157,24.7100298 L13.1484902,23.7050646 C13.3663589,23.5888778 13.5774894,23.4637537 13.7852508,23.3316782 L13.8964313,23.266137 L13.8885701,23.266137 C16.3603694,21.632572 18,18.8013902 18,15.5779543" id="Fill-53" fill="url(#linearGradient-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
