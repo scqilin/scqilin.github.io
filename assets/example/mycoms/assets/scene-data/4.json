@@ -4,8 +4,8 @@
     "options":{
         "width":1920,
         "height":1080,
-        "backgroundColor":"#000000",
-        "backgroundImage":""
+        "bgColor":"#000000",
+        "bgImage":""
     },
     "components":[{"selector":"ComputerRoomComponent","position":{"left":0,"top":0,"width":1920,"height":1080,"rotate":0},"uuid":"WmQoU7XzN50x0IFDCoVG6","type":"sincoms"}]
 }

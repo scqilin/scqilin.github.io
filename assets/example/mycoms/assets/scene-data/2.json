@@ -4,8 +4,8 @@
     "options":{
         "width":1920,
         "height":1080,
-        "backgroundColor":"#000000",
-        "backgroundImage":""
+        "bgColor":"#000000",
+        "bgImage":""
     },
     "components":[
       {
