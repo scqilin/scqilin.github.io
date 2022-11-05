@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="70px" viewBox="0 0 180 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形备份 13</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.2107736%" id="linearGradient-1">
+            <stop stop-color="#02F3C0" stop-opacity="0.645705857" offset="0%"></stop>
+            <stop stop-color="#034660" stop-opacity="0.700885052" offset="17.0563811%"></stop>
+            <stop stop-color="#00716F" stop-opacity="0.520733173" offset="47.6658088%"></stop>
+            <stop stop-color="#0B3745" stop-opacity="0.674524694" offset="88.4015569%"></stop>
+            <stop stop-color="#02F3C0" stop-opacity="0.668651661" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="57.5617284%" x2="50.5656475%" y2="42.4382716%" id="linearGradient-2">
+            <stop stop-color="#26FFF9" offset="0%"></stop>
+            <stop stop-color="#37FFFB" stop-opacity="0" offset="50.7238855%"></stop>
+            <stop stop-color="#47FFFC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="中间件监控可视化大屏" transform="translate(-870.000000, -901.000000)" fill="url(#linearGradient-1)" stroke="url(#linearGradient-2)" stroke-width="1.2672869">
+            <g id="编组-21" transform="translate(756.000000, 880.000000)">
+                <g id="编组-22" transform="translate(114.000000, 21.000000)">
+                    <rect id="矩形备份-13" x="0.63364345" y="0.63364345" width="178.732713" height="68.7327131" rx="5.0691476"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

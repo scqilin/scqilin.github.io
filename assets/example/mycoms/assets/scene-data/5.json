@@ -1,0 +1,250 @@
+{
+    "id": "_BjyZ9",
+    "name": "文本",
+    "components": [
+        {
+            "title": "标题",
+            "selector": "TitleComponent",
+            "position": {
+                "left": 36,
+                "top": 46,
+                "width": 700,
+                "height": 40,
+                "rotate": 0
+            },
+            "uuid": "Tp-lVoxcPGRh9WRqoUp_d",
+            "type": "sincoms",
+            "options": {
+                "textAlign": "center",
+                "letterSpacing": 0,
+                "textStyle": {
+                    "color": "#fff",
+                    "fontSize": 26,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "demoData": {
+                "value": "无聊成独卧，弹指韶光过。一曲红绡残，一枝翠柳低。"
+            }
+        },
+        {
+            "title": "标题",
+            "selector": "TitleComponent",
+            "position": {
+                "left": 275,
+                "top": 110,
+                "width": 700,
+                "height": 40,
+                "rotate": 0
+            },
+            "uuid": "oIzPdedPp4KlgfaaZl2pP",
+            "type": "sincoms",
+            "options": {
+                "textAlign": "center",
+                "letterSpacing": 0,
+                "textStyle": {
+                    "color": "#fff",
+                    "fontSize": 26,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "demoData": {
+                "value": "生年不满百，常怀千岁忧。"
+            }
+        },
+        {
+            "title": "跑马灯",
+            "selector": "MarqueeComponent",
+            "position": {
+                "left": 56,
+                "top": 156,
+                "width": 700,
+                "height": 40,
+                "rotate": 0
+            },
+            "uuid": "YZl1G9AT35kMsyrWtMEco",
+            "type": "sincoms",
+            "options": {
+                "textAlign": "center",
+                "letterSpacing": 0,
+                "duration": 10,
+                "textStyle": {
+                    "color": "#ff000f",
+                    "fontSize": 26,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "demoData": {
+                "value": "知我意，感君怜，此情须问天。"
+            }
+        },
+        {
+            "title": "标题",
+            "selector": "TitleComponent",
+            "position": {
+                "left": 218,
+                "top": 204,
+                "width": 700,
+                "height": 40,
+                "rotate": 0
+            },
+            "uuid": "sJLdoFYrrKLV1IsvD_C2b",
+            "type": "sincoms",
+            "options": {
+                "textAlign": "center",
+                "letterSpacing": 0,
+                "textStyle": {
+                    "color": "#fff",
+                    "fontSize": 26,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "demoData": {
+                "value": "儿大诗书女丝麻，公但读书煮春茶。"
+            }
+        },
+        {
+            "title": "标题",
+            "selector": "TitleComponent",
+            "position": {
+                "left": -81,
+                "top": 269,
+                "width": 700,
+                "height": 40,
+                "rotate": 0
+            },
+            "uuid": "0NJbiratROVxAiIYX-U54",
+            "type": "sincoms",
+            "options": {
+                "textAlign": "center",
+                "letterSpacing": 0,
+                "textStyle": {
+                    "color": "#fff",
+                    "fontSize": 26,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "demoData": {
+                "value": "唯有相思似春色，江南江北送君归。"
+            }
+        },
+        {
+            "title": "跑马灯",
+            "selector": "MarqueeComponent",
+            "position": {
+                "left": 48,
+                "top": 336,
+                "width": 700,
+                "height": 40,
+                "rotate": 0
+            },
+            "uuid": "STCDZOlIppiwIqrR35_MO",
+            "type": "sincoms",
+            "options": {
+                "textAlign": "center",
+                "letterSpacing": 0,
+                "duration": 10,
+                "textStyle": {
+                    "color": "#fff000",
+                    "fontSize": 26,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "demoData": {
+                "value": "不是道人来引笑，周情孔思正追寻。"
+            }
+        },
+        {
+            "title": "标题",
+            "selector": "TitleComponent",
+            "position": {
+                "left": 232,
+                "top": 415,
+                "width": 700,
+                "height": 40,
+                "rotate": 0
+            },
+            "uuid": "pF9uUqnqo5pw0nm4LJ805",
+            "type": "sincoms",
+            "options": {
+                "textAlign": "center",
+                "letterSpacing": 0,
+                "textStyle": {
+                    "color": "#fff",
+                    "fontSize": 26,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "demoData": {
+                "value": "沅有芷兮澧有兰，思公子兮未敢言。"
+            }
+        },
+        {
+            "title": "跑马灯",
+            "selector": "MarqueeComponent",
+            "position": {
+                "left": 66,
+                "top": 485,
+                "width": 700,
+                "height": 40,
+                "rotate": 0
+            },
+            "uuid": "741-mLtrTGnbU1HPKk6Fl",
+            "type": "sincoms",
+            "options": {
+                "textAlign": "center",
+                "letterSpacing": 0,
+                "duration": 10,
+                "textStyle": {
+                    "color": "#fff",
+                    "fontSize": 26,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "demoData": {
+                "value": "得欢当作乐，斗酒聚比邻。"
+            }
+        },
+        {
+            "title": "跑马灯",
+            "selector": "MarqueeComponent",
+            "position": {
+                "left": 68,
+                "top": 558,
+                "width": 700,
+                "height": 40,
+                "rotate": 0
+            },
+            "uuid": "n-2NtXgZDFIwU6USB_W-U",
+            "type": "sincoms",
+            "options": {
+                "textAlign": "center",
+                "letterSpacing": 0,
+                "duration": 10,
+                "textStyle": {
+                    "color": "#fff",
+                    "fontSize": 26,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "demoData": {
+                "value": "一寸光阴一寸金，寸金难买寸光阴。"
+            }
+        }
+    ],
+    "options": {
+        "width": 1920,
+        "height": 1080,
+        "bgColor": "#000000",
+        "bgImage": ""
+    }
+}

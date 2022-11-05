@@ -1,22 +1,50 @@
 {
     "scene":[
         {
-            "id":1,
             "name":"测试",
             "url":"./assets/scene-data/1.json"
         },
         {
-            "id":2,
             "name":"大屏2",
             "url":"./assets/scene-data/2.json"
         },
         {
-            "id":3,
             "name":"特效",
             "url":"./assets/scene-data/3.json"
         },
         {
-            "id":4,
+            "name":"机房",
+            "url":"./assets/scene-data/4.json"
+        },
+        {
+            "name":"文本",
+            "url":"./assets/scene-data/5.json"
+        },
+        {
+            "name":"大屏2",
+            "url":"./assets/scene-data/2.json"
+        },
+        {
+            "name":"特效",
+            "url":"./assets/scene-data/3.json"
+        },
+        {
+            "name":"机房",
+            "url":"./assets/scene-data/4.json"
+        },
+        {
+            "name":"测试",
+            "url":"./assets/scene-data/1.json"
+        },
+        {
+            "name":"大屏2",
+            "url":"./assets/scene-data/2.json"
+        },
+        {
+            "name":"特效",
+            "url":"./assets/scene-data/3.json"
+        },
+        {
             "name":"机房",
             "url":"./assets/scene-data/4.json"
         }
