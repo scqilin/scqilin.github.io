@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>firewall</title>
+    <defs>
+        <linearGradient x1="50%" y1="1.50273485%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-340.000000, -345.000000)" fill-rule="nonzero">
+            <g id="防火墙" transform="translate(340.000000, 345.000000)">
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="31.824" height="31.824"></rect>
+                <path d="M3.978,3.978 L18.8955,3.978 L18.8955,10.9395 L3.978,10.9395 L3.978,3.978 Z M12.9285,12.9285 L27.846,12.9285 L27.846,19.89 L12.9285,19.89 L12.9285,12.9285 Z M3.978,12.9285 L10.9395,12.9285 L10.9395,19.89 L3.978,19.89 L3.978,12.9285 Z M20.8845,21.879 L27.846,21.879 L27.846,27.846 L20.8845,27.846 L20.8845,21.879 Z M20.8845,3.978 L27.846,3.978 L27.846,10.9395 L20.8845,10.9395 L20.8845,3.978 Z M3.978,21.879 L18.8955,21.879 L18.8955,27.846 L3.978,27.846 L3.978,21.879 Z" id="形状" fill="url(#linearGradient-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

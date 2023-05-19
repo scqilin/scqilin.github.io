@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="26px" viewBox="0 0 27 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>database</title>
+    <defs>
+        <linearGradient x1="50%" y1="0.763647697%" x2="50%" y2="99.1333861%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.763647697%" x2="50%" y2="99.1333861%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-376.000000, -305.000000)" fill-rule="nonzero">
+            <g id="database" transform="translate(376.000000, 305.000000)">
+                <path d="M0,6.12334995 L0,13.1487731 C0,15.2951092 6.04241884,17.0344828 13.5,17.0344828 C20.9575812,17.0344828 27,15.2951092 27,13.1487731 L27,6.12334995 C27,8.26870777 20.9575812,10.0080813 13.5,10.0080813 C6.04241884,10.0080813 0,8.26870777 0,6.12334995 Z" id="Fill-1" fill="url(#linearGradient-1)"></path>
+                <path d="M13.5,8.06896552 C20.9575812,8.06896552 27,6.26276878 27,4.03499069 C27,1.80619674 20.9575812,0 13.5,0 C6.04241884,0 0,1.80619674 0,4.03499069 C0,6.26276878 6.04241884,8.06896552 13.5,8.06896552" id="路径" fill="url(#linearGradient-2)"></path>
+                <path d="M0,15.0888672 L0,22.1152686 C0,24.2606265 6.04241884,26 13.5,26 C20.9575812,26 27,24.2606265 27,22.1152686 L27,15.0888672 C27,17.234225 20.9575812,18.9735985 13.5,18.9735985 C6.04241888,18.9735985 0,17.234225 0,15.0888672 Z" id="路径" fill="url(#linearGradient-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

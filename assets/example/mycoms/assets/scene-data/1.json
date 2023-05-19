@@ -1,0 +1,264 @@
+{
+  "id": "1",
+  "name": "大屏",
+  "components": [
+    {
+      "title": "折线图",
+      "selector": "LinechartComponent",
+      "position": {
+        "left": 100,
+        "top": 100,
+        "width": 400,
+        "height": 250,
+        "rotate": 0
+      },
+      "uuid": "f5j3ru2aum5fpp9g16fdu",
+      "options": {
+        "grid": {
+          "bottom": "40",
+          "top": "30"
+        },
+        "tooltip": {
+          "trigger": "axis"
+        },
+        "textStyle": {
+          "color": "#999"
+        },
+        "xAxis": {
+          "type": "time",
+          "splitLine": {
+            "show": false
+          }
+        },
+        "yAxis": {
+          "splitLine": {
+            "show": false
+          }
+        },
+        "series": [
+          {
+            "type": "line",
+            "color": "#2371f1",
+            "symbol": "none",
+            "smooth": true,
+            "name": "",
+            "data": [
+              [
+                1675667296226,
+                95
+              ],
+              [
+                1675667356226,
+                68
+              ],
+              [
+                1675667416226,
+                79
+              ],
+              [
+                1675667476226,
+                66
+              ],
+              [
+                1675667536226,
+                10
+              ],
+              [
+                1675667596226,
+                69
+              ],
+              [
+                1675667656226,
+                44
+              ]
+            ]
+          }
+        ]
+      },
+      "comData": {}
+    },
+    {
+      "title": "柱状图",
+      "selector": "BasicbarComponent",
+      "position": {
+        "left": 1142,
+        "top": 112,
+        "width": 400,
+        "height": 250,
+        "rotate": 0
+      },
+      "uuid": "nythqevkvzxcqt26mv4sh",
+      "options": {
+        "grid": {
+          "top": 30,
+          "bottom": 40
+        },
+        "tooltip": {
+          "trigger": "axis"
+        },
+        "xAxis": {
+          "type": "category",
+          "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        },
+        "yAxis": {
+          "type": "value",
+          "splitLine": {
+            "show": false
+          }
+        },
+        "series": [
+          {
+            "data": [
+              120,
+              200,
+              150,
+              80,
+              70,
+              110,
+              130
+            ],
+            "type": "bar",
+            "color": "#2371f1",
+            "barWidth": "auto"
+          }
+        ]
+      },
+      "comData": {}
+    },
+    {
+      "title": "饼图",
+      "selector": "BasicpieComponent",
+      "position": {
+        "left": 822,
+        "top": 96,
+        "width": 300,
+        "height": 300,
+        "rotate": 0
+      },
+      "uuid": "__mzow74cjxcbvmwfup9j",
+      "options": {
+        "color": [
+          "#2371f1",
+          "#d55717",
+          "#788EBB"
+        ],
+        "tooltip": {
+          "trigger": "item"
+        },
+        "legend": {
+          "top": "5%",
+          "left": "center",
+          "textStyle": {
+            "color": "#999"
+          }
+        },
+        "series": [
+          {
+            "name": "主机状态",
+            "type": "pie",
+            "radius": [
+              "0%",
+              "70%"
+            ],
+            "avoidLabelOverlap": false,
+            "label": {
+              "show": false,
+              "position": "center"
+            },
+            "emphasis": {
+              "label": {
+                "show": true,
+                "fontSize": 40,
+                "fontWeight": "bold"
+              }
+            },
+            "labelLine": {
+              "show": false
+            },
+            "data": [
+              {
+                "value": 94,
+                "name": "正常"
+              },
+              {
+                "value": 38,
+                "name": "警告"
+              },
+              {
+                "value": 10,
+                "name": "离线"
+              }
+            ]
+          }
+        ]
+      },
+      "comData": {}
+    },
+    {
+      "title": "极坐标柱状图",
+      "selector": "PolarbarComponent",
+      "position": {
+        "left": 500,
+        "top": 94,
+        "width": 300,
+        "height": 300,
+        "rotate": 0
+      },
+      "uuid": "zmbotv0iepqqwxv9deodx",
+      "options": {
+        "polar": {
+          "radius": [
+            "10%",
+            "80%"
+          ]
+        },
+        "angleAxis": {
+          "max": 4,
+          "startAngle": 90
+        },
+        "radiusAxis": {
+          "type": "category",
+          "data": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        "tooltip": {},
+        "series": {
+          "color": "#2371f1",
+          "type": "bar",
+          "barWidth": 15,
+          "data": [
+            2,
+            1.2,
+            2.4,
+            3.6
+          ],
+          "coordinateSystem": "polar",
+          "label": {
+            "show": true,
+            "position": "middle",
+            "formatter": "{b}: {c}"
+          }
+        }
+      },
+      "comData": {}
+    }
+  ],
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "bgColor": "#000000",
+    "bgImage": ""
+  }
+}

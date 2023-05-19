@@ -1,0 +1,8 @@
+{
+    "scene":[
+        {
+            "name":"示例1",
+            "url":"./assets/scene-data/1.json"
+        }
+    ]
+}

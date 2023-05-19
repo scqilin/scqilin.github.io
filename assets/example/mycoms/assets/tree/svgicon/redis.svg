@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="26px" viewBox="0 0 27 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>redis</title>
+    <defs>
+        <linearGradient x1="50%" y1="0.763647697%" x2="50%" y2="99.1333861%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.763647697%" x2="50%" y2="99.1333861%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.763647697%" x2="50%" y2="99.1333861%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-173.000000, -440.000000)" fill-rule="nonzero">
+            <g id="redis" transform="translate(173.000000, 440.000000)">
+                <path d="M11.1724138,6.5005004 C11.1724138,9.57722216 8.67337406,12.0714286 5.5862069,12.0714286 C2.50104701,12.0714286 0,9.57722216 0,6.5005004 C0,3.42277784 2.50104701,0.928571429 5.5862069,0.928571429 C8.67337406,0.928571429 11.1724138,3.42277784 11.1724138,6.5005004" id="Fill-43" fill="url(#linearGradient-1)"></path>
+                <polygon id="Fill-44" fill="url(#linearGradient-2)" points="20.947761 0 22.8179101 3.66877079 27 4.25581391 23.9743954 7.11129564 24.6890889 11.1428571 20.947761 9.23920263 17.206433 11.1428571 17.9211265 7.11129564 14.8965517 4.25581391 19.0776119 3.66877079"></polygon>
+                <polygon id="Fill-45" fill="url(#linearGradient-3)" points="11.0172414 19.9648332 5.97466613 22.9824165 0.931034483 26 0.931034483 19.9648332 0.931034483 13.9285714 5.97466613 16.9472497"></polygon>
+                <polygon id="Fill-46" fill="url(#linearGradient-1)" points="14.8965517 26 26.0689655 26 26.0689655 14.8571429 14.8965517 14.8571429"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

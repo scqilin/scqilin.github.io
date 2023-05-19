@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>web</title>
+    <defs>
+        <linearGradient x1="50%" y1="0.763647697%" x2="50%" y2="99.1333861%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-510.000000, -439.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="web" transform="translate(510.000000, 439.000000)">
+                <path d="M13.0009558,3 C17.5248513,3 21.2716653,6.46244663 22,11 L4,11 C4.72737893,6.46244663 8.47610449,3 13.0009558,3 L13.0009558,3 Z M25.8959372,14.5678145 C25.9587675,14.052409 26,13.5320949 26,13 C26,12.4679051 25.9587675,11.9466093 25.8959372,11.4321855 C25.1203745,4.99403415 19.6472587,0 13.0009817,0 C5.82064639,0 0,5.82064639 0,13 C0,20.1793536 5.82064639,26 13.0009817,26 C18.51533,26 23.2069929,22.5531642 25.0948497,17.7034436 L24.587298,17.7034436 L21.1021749,17.7034436 C19.4793838,20.4993959 16.4645069,22.3843075 13.0009817,22.3843075 C8.35349643,22.3843075 4.50513519,19.0022655 3.7570609,14.5678145 L22.2439209,14.5678145 L25.8959372,14.5678145 Z" id="Fill-48"></path>
+            </g>
+        </g>
+    </g>
+</svg>

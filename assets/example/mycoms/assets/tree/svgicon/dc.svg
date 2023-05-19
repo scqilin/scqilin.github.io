@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>dc</title>
+    <defs>
+        <linearGradient x1="50%" y1="1.50273485%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-670.000000, -348.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="数据中心" transform="translate(670.000000, 348.000000)">
+                <path d="M9.33674468,24.9938543 L9.33674468,0.389824875 L16.0469345,0.389824875 L16.0469345,24.9938543 L9.33674468,24.9938543 Z M0.389824875,24.9938543 L0.389824875,10.4551097 L7.10001473,10.4551097 L7.10001473,24.9938543 L0.389824875,24.9938543 Z M18.2836645,24.9938543 L18.2836645,7.10001473 L24.9938543,7.10001473 L24.9938543,24.9938543 L18.2836645,24.9938543 Z" id="形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>
